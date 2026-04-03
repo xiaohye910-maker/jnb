@@ -1,0 +1,1137 @@
+# Translation of Plugins - GTM4WP &#8211; A Google Tag Manager (GTM) plugin for WordPress - Stable (latest release) in Chinese (Taiwan)
+# This file is distributed under the same license as the Plugins - GTM4WP &#8211; A Google Tag Manager (GTM) plugin for WordPress - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-06-24 22:27:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: zh_TW\n"
+"Project-Id-Version: Plugins - GTM4WP &#8211; A Google Tag Manager (GTM) plugin for WordPress - Stable (latest release)\n"
+
+#: admin/admin-tab-integrate.php:269
+msgid ""
+"Enabling this feature will fire a GTM event (cookie_consent_update) when the consent banner has been closed\n"
+"\t\t\t\twith consents being set or during pageload when previously set consents have been found.\n"
+"\t\t\t\tYou do not need to use this integration with v3.x or above since it includes all the necessary codes to integrate\n"
+"\t\t\t\tthe consent banner with Google Tag Manager. Just use their wcc_gcm_consent_update event to fire\n"
+"\t\t\t\ttags that do not support advanced consent mode (usually non-Google tags) or if you would like to implement\n"
+"\t\t\t\tbasic consent mode."
+msgstr "啟用此功能將會在同意並關閉隱私權橫幅、或是載入頁面後發現之前已同意時，觸發 GTM 事件 (cookie_consent_update)。如果是 3.x 或以上的版本，將毋需啟用此整合功能，因為必要的程式碼已經在 Google 代碼管理工具中整合，只要使用內建的 wcc_gcm_consent_update 事件來觸發不支援進階同意模式的代碼 (通常是非 Google 的代碼)，或者導入基本同意模式。"
+
+#: admin/admin-tab-integrate.php:267
+msgid "WebToffee GDPR Cookie Consent (v2.x)"
+msgstr "WebToffee GDPR Cookie Consent (v2.x)"
+
+#: admin/admin-tab-integrate.php:120
+msgid "If this option is turned on, the view_item event will be also fired during page load of a variable product using parent product data."
+msgstr "如果啟用此選項，當頁面載入使用上層商品資料的可變商品時，將會觸發 view_item 事件。"
+
+#: admin/admin-tab-integrate.php:119
+msgid "Fire view_item on parent product"
+msgstr "在上層商品中觸發 view_item 事件"
+
+#. translators: 1: anchor element linking to GA4 Ecommerce docs. 2: closing
+#. anchor element. 3: anchor element linking to GTM4WP setup guide for Google
+#. Analytics 4. 4: closing anchor element.
+#: admin/admin-tab-integrate.php:23
+msgid ""
+"Choose this option if you would like to track e-commerce data using \n"
+"\t\t\t\t\t %1$secommerce tracking%2$s.<br>\n"
+"\t\t\t\t\t Use the plugin's %3$sofficial guides%4$s to setup your Google Tag Manager container:<br/>\n"
+"\t\t\t\t\t <strong>WooCommerce 5.0+ is required to use this integration</strong>"
+msgstr ""
+"勾選此選項，以透過%1$s評估電子商務%2$s功能追蹤電子商務資料。<br>\n"
+"\t\t\t\t\t 透過本外掛的%3$s官方指南 (英文) %4$s來設定你的 Google 代碼管理工具容器:<br/>\n"
+"\t\t\t\t\t <strong>必須安裝 WooCommerce 5.0 以上之版本以啟用此整合功能</strong>"
+
+#: admin/admin-tab-integrate.php:42
+msgid ""
+"If you have many products shown on product category pages and/or on your site home, you could miss pageviews in Google Analytics due to the\n"
+"\t\t\t\tamount of data that is needed to be sent. To prevent this, you can split product impression data into multiple Google Analytics events by\n"
+"\t\t\t\tentering a number here (minimum 10-15 recommended)<br /><br />Leave this value 0 to include product impression data in your pageview hit."
+msgstr "如果你的首頁或分類頁同時顯示多項產品，可能會因為傳送資料的封包大小導致無法追蹤到 Google Analytics 的頁面瀏覽。要避免這種情況，你可以透過這項功能將產品曝光資料分散為多個 Google Analytics (分析) 事件 (建議最少 10-15)<br /><br />若此選項設為 0，會將產品曝光的數據納入頁面瀏覽的匹配 (hit) 中。<br />"
+
+#: admin/admin.php:1055
+msgid "WebToffee GDPR Cookie Consent"
+msgstr "WebToffee GDPR Cookie Consent"
+
+#: admin/admin-tab-integrate.php:235
+msgid "Select this checkbox to make the ad_personalization flag \"granted\" by default."
+msgstr "勾選以將 ad_personalization 參數的值預設為「granted」。"
+
+#: admin/admin-tab-integrate.php:234
+msgid "Ad Personalization"
+msgstr "個人化廣告的同意聲明"
+
+#: admin/admin-tab-integrate.php:227
+msgid "Select this checkbox to make the ad_user_data flag \"granted\" by default."
+msgstr "勾選以將 ad_user_data 參數的值預設為「granted」。"
+
+#: admin/admin-tab-integrate.php:226
+msgid "Ad User Data"
+msgstr "廣告使用者資料"
+
+#. translators: 1: opening anchor tag linking to Google's documentation about
+#. the consent mode command. 2: Closing anchor tag.
+#: admin/admin-tab-integrate.php:197
+msgid ""
+"Enable this checkbox if you wish to execute the \"default\" command of %1$sGoogle Consent Mode%2$s before the container loads.\n"
+"\t\t\t\t\tThe \"update\" command needs to be executed from your consent management tool.<br /><br />\n"
+"\t\t\t\t\tDO NOT enable this feature if your consent manager tool supports firing both the \"default\" and the \"update\" command."
+msgstr ""
+"啟用此選項，以在容器載入前執行 %1$sGoogle 同意聲明模式%2$s 中的「default」指令。\n"
+"\t\t\t\t「update」指令需要從你的同意聲明管理工具執行。<br /><br />\n"
+"\t\t\t\t如果你的同意聲明管理工具已經支援「default」與「update」兩項指令，「請不要」啟用這個功能。"
+
+#: admin/admin-tab-integrate.php:19
+msgid "Track e-commerce"
+msgstr "追蹤電子商務"
+
+#: admin/admin-tab-basicdata.php:109
+msgid "By default, the plugin will check the so called REMOTE_ADDR system variable for IP addresses. In some cases, this might not include the correct address. You may specify a custom header to read the IP address from."
+msgstr "本外掛預設會從名為 REMOTE_ADDR 的系統變數中確認 IP 位址。在某些情況，這些 IP 位址並不正確，因此你可以指定特定的標頭，以讀取正確的 IP 位址。"
+
+#: admin/admin-tab-basicdata.php:108
+msgid "Visitor IP - Read from custom header."
+msgstr "從自訂標頭讀取的訪客 IP"
+
+#. Plugin Name of the plugin
+#: duracelltomi-google-tag-manager-for-wordpress.php
+msgid "GTM4WP - A Google Tag Manager (GTM) plugin for WordPress"
+msgstr "GTM4WP - 為 WordPress 而生的 Google 代碼管理工具外掛"
+
+#: admin/admin-tab-integrate.php:251
+msgid "Select this checkbox to make the security_storage flag \"granted\" by default."
+msgstr "勾選以將 security_storage 參數的值預設為「granted」。"
+
+#: admin/admin-tab-integrate.php:243
+msgid "Select this checkbox to make the functionality_storage flag \"granted\" by default."
+msgstr "勾選以將 functionality_storage 參數的值預設為「granted」。"
+
+#: admin/admin-tab-integrate.php:259
+msgid "Select this checkbox to make the personalization_storage flag \"granted\" by default."
+msgstr "勾選以將 personalization_storage 參數的值預設為「granted」。"
+
+#: admin/admin-tab-integrate.php:211
+msgid "Select this checkbox to make the analytics_storage flag \"granted\" by default."
+msgstr "勾選以將 analytics_storage 參數的值預設為「granted」。"
+
+#: admin/admin-tab-integrate.php:250
+msgid "Security Storage"
+msgstr "安全性儲存功能"
+
+#: admin/admin-tab-integrate.php:242
+msgid "Functionality Storage"
+msgstr "網站、應用程式功能儲存"
+
+#: admin/admin-tab-integrate.php:258
+msgid "Personalization Storage"
+msgstr "個人化儲存功能"
+
+#: admin/admin-tab-integrate.php:210
+msgid "Analytics Storage"
+msgstr "分析儲存功能"
+
+#: admin/admin-tab-integrate.php:219
+msgid "Select this checkbox to make the ad_storage flag \"granted\" by default."
+msgstr "勾選以將 ad_storage 參數的值預設為「granted」。"
+
+#: admin/admin-tab-integrate.php:218
+msgid "Ad Storage"
+msgstr "廣告儲存功能"
+
+#: admin/admin-tab-integrate.php:193 admin/admin.php:1054
+msgid "Google Consent Mode"
+msgstr "Google 同意聲明模式"
+
+#. translators: 1: anchor element linking to the official GA4 doc about
+#. clearing the ecommerce object. 2: closing anchor element.
+#: admin/admin-tab-integrate.php:141
+msgid ""
+"Clear the ecommerce object before any new event being pushed into the data layer.<br /><br />\n"
+"\t\t\t\t\tAlthought it is %1$srecommended by Google%2$s, it is not mandatory to activate this feature as\n"
+"\t\t\t\t\tthe GA4 event tag reads only the last pushed ecommerce data on any new event.<br />\n"
+"\t\t\t\t\tUse it if you encounter issues with your GTM implementation."
+msgstr ""
+"在推送新的資料層事件以前，清除電子商務物件<br /><br />\n"
+"\t\t\t\t\t雖然 Google %1$s推薦這麼做%2$s，但這項功能並非強制啟用，\n"
+"\t\t\t\t\t因為 GA4 事件代碼在新的事件產生時，只會讀取最後推送的電子商務資料。<br />\n"
+"\t\t\t\t\t如果你在導入 GTM 時遇到問題，請使用這個功能。"
+
+#: admin/admin-tab-integrate.php:137
+msgid "Clear ecommerce object before new event"
+msgstr "在建立新事件以前清除電子商務物件"
+
+#: admin/admin.php:593
+msgid "Invalid GTM custom domain path. Value can include anything between a-z, A-Z, 0-9 or any of the characters . - _"
+msgstr "無效的 Google 自訂網域位置。有效網域為大小寫字母 (a-z 或 A-Z)、數字以及下列三種特殊符號: 「.」、「-」與「_」。"
+
+#: admin/admin-tab-advanced.php:44
+msgid "Enter a custom path for your custom domain name if it is not gtm.js. Do not include the / prefix. Leave this blank to use gtm.js"
+msgstr "如果你的自訂容器路徑不是 gtm.js，請輸入自訂網域的路徑，並且不要在路徑的最前端加入 /。留空以使用預設的 gtm.js。"
+
+#: admin/admin-tab-advanced.php:43
+msgid "Container custom path"
+msgstr "容器自訂路徑"
+
+#: admin/admin-tab-advanced.php:34
+msgid "GTM4WP puts several useful messages into the console of your browser which can also help give proper support in some cases. If you see any issues regarding this functionality, you can disable it here."
+msgstr "GTM4WP 會在瀏覽器主控台中放入一些有用的訊息，在特定偵錯情境下提供適當的支援。如果發現啟用這項功能會造成問題，可以在這裡關閉。"
+
+#: admin/admin-tab-advanced.php:33
+msgid "Do not use console.log() messages on frontend"
+msgstr "不要在前端顯示 console.log() 訊息"
+
+#. translators: %s: PHP version number.
+#: admin/admin.php:1291
+msgid "Warning: You are using an outdated version of PHP (%s) that might be not compatible with future versions of the plugin Google Tag Manager for WordPress (GTM4WP). Please consider to upgrade your PHP."
+msgstr "警告: 本網站正在使用過舊版本的 PHP (%s)，這可能無法與 Google Tag Manager for WordPress (GTM4WP) 未來的版本相容。請考慮升級你的 PHP 版本。"
+
+#. translators: 1: the name of the conflicting plugin being checked. 2: either
+#. 'active' or 'inactive' using bolded formatting.
+#: admin/admin.php:475
+msgid "This plugin (%1$s) is %2$s, enabling this integration could cause issues on frontend!"
+msgstr "外掛 (%1$s) 的狀態為 %2$s，啟用這項整合功能可能導致網站前端發生問題。"
+
+#. translators: 1: the name of the conflicting plugin being checked. 2: either
+#. 'active' or 'inactive' using bolded formatting.
+#: admin/admin.php:465
+msgid "This plugin (%1$s) is %2$s, it is strongly recommended to enable this integration!"
+msgstr "本外掛 (%1$s) 的狀態為 %2$s，強烈建議啟用這項整合功能。"
+
+#. translators: 1: opening anchor tag that points to the corresponding
+#. Analytics Talks blog post. 2: closing anchor tag.
+#: admin/admin.php:183
+msgid "Based on the script originaly posted to %1$sAnalytics Talk%2$s"
+msgstr "根據 %1$sAnalytics Talk%2$s 發布的程式碼製作。"
+
+#. translators: 1: opening anchor tag linking to GTM's developer doc homepage.
+#. 2: Closing anchor tag.
+#: admin/admin.php:147
+msgid ""
+"This plugin is intended to be used by IT and marketing staff. Please be sure you read the\n"
+"\t\t\t\t\t%1$sGoogle Tag Manager Help Center%2$s before you start using this plugin.<br /><br />"
+msgstr "本外掛式專為 IT 或行銷人員設計。使用本外掛前，請詳閱 %1$sGoogle 代碼管理工具簡介%2$s 。"
+
+#. translators: 1: opening anchor tag linking to Cookiebot's documentation
+#. about the automatic cookie blocking feature. 2: Closing anchor tag.
+#: admin/admin-tab-integrate.php:182
+msgid "Enable this checkbox if you wish to use the %1$sautomatic cookie blocking mode of Cookiebot with Google Tag Manager%2$s."
+msgstr "啟用此選項，以%1$s透過 Google 代碼管理工具使用 Cookiebot 的自動阻擋 Cookie 模式%2$s。"
+
+#. translators: 1: anchor element linking to GTM4WP setup guide for Google Ads
+#. dynamic remarketing. 2: closing anchor element.
+#: admin/admin-tab-integrate.php:96
+msgid ""
+"Select which vertical category to add next to each product to utilize dynamic remarketing for Google Ads.\n"
+"\t\t\t\t\t <br />Use the plugin's %1$sofficial setup guide for dynamic remarketing%2$s\n"
+"\t\t\t\t\t to setup your Google Tag Manager container."
+msgstr ""
+"選取要在各產品下新增的業務類型，以活用 Google Ads 的動態再行銷功能<br />\n"
+"參閱本外掛的 %1$s〈動態再行銷設定官方指南 (英文)〉%2$s以設定你的 Google 代碼管理工具容器。"
+
+#. translators: 1: opening anchor tag linking to Open Weather Map's pricing
+#. page. 2: closing anchor tag.
+#: admin/admin-tab-basicdata.php:179
+msgid "Enter your OpenWeatherMap API key here. %1$sGet a free API key here%2$s."
+msgstr "在此輸入你的 OpenWeatherMap API 金鑰。%1$s從這裡免費取得 API 金鑰。%2$s."
+
+#. translators: 1: opening anchor tag linking to ipstack.com product page. 2:
+#. closing anchor tag. 3: opening anchor tag linking to OpenWeatherMap pricing
+#. page. 4: closing anchor tag.
+#: admin/admin-tab-basicdata.php:152
+msgid ""
+"Check this option to include the current weather conditions around the current visitor.<br /><br />\n"
+"\t\t\t\t\t <strong>Attention!</strong> This feature uses %1$sipstack.com%2$s and\n"
+"\t\t\t\t\t %3$sopenweathermap.org%4$s to collect data.<br />\n"
+"\t\t\t\t\t Depending on your website's traffic, additional fees may apply!<br />\n"
+"\t\t\t\t\t This plugin caches weather data for 1 hour to lower the need to access those services.<br /><br />\n"
+"\t\t\t\t\t If you activate weather data, <strong>you will need</strong> to add an IPStack.com API key regardless of whether you\n"
+"\t\t\t\t\t activate the 'Geo data' option!"
+msgstr ""
+"勾選此選項，以將當前訪客周遭的天氣狀況納入資料層變數。<br /><br />\n"
+"\t\t\t\t\t <strong>注意！</strong> 這項功能使用 %1$sipstack.com%2$s 與\n"
+"\t\t\t\t\t %3$sopenweathermap.org%4$s 的服務以蒐集資料。<br />\n"
+"\t\t\t\t\t 根據網站的流量，你可能需要支付額外的費用。<br />\n"
+"\t\t\t\t\t 本外掛會將天氣資料快取 1 小時，以降低存取這些服務的頻率。<br /><br />\n"
+"\t\t\t\t\t 如果啟用天氣資料的功能，無論是否啟用 [地理資料]，皆<strong>需要</strong>填入 IPStack.com API 金鑰。"
+
+#. translators: 1: the anchor eleemnt pointing to ipstack.com to register for
+#. API keys. 2: closing anchor tag.
+#: admin/admin-tab-basicdata.php:133
+msgid "Enter your IPStack.com API key here. %1$sGet a free API key here%2$s."
+msgstr "在此輸入你的 IPStack.com API 金鑰。%1$s從這裡免費取得 API 金鑰。%2$s."
+
+#: admin/admin.php:766
+msgid ""
+"Compatibility mode decides where to put the second, so called <code>&lt;noscript&gt;</code> or <code>&lt;iframe&gt;</code> part of the GTM container code.<br />\n"
+"\t\t\t\t\tThis code is usually only executed if your visitor has disabled JavaScript for some reason.<br/>\n"
+"\t\t\t\t\tIt is also mandatory in order to verify your site in Google Search Console using the GTM method.<br/>\n"
+"\t\t\t\t\tThe main GTM container code will be placed into the <code>&lt;head&gt;</code> section of your webpages anyway (where it belongs to).<br/><br/>\n"
+"\t\t\t\t\tIf you select \"Manually coded\", you need to edit your template files and add the following line just after the opening <code>&lt;body&gt;</code> tag:<br />\n"
+"\t\t\t\t\t<code>&lt;?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?&gt;</code>"
+msgstr ""
+"相容模式的設定決定希望放置 GTM 容器的 <code>&lt;noscript&gt;</code> 或 <code>&lt;iframe&gt;</code> 部分的位置。<br />\n"
+"\t\t\t\t\t這段代碼通常僅會在訪客基於某些原因停用 JavaScript 時執行。<br/>\n"
+"\t\t\t\t\t如果希望透過 GTM 進行 Google Search Console 的網站驗證時，這段代碼是必要的。<br/>\n"
+"\t\t\t\t\t無論如何，GTM 容器的主要代碼仍會嵌入於頁面的 <code>&lt;head&gt;</code> 區段。<br/><br/>\n"
+"\t\t\t\t\t如果選擇 [手動輸入程式碼]，請編輯佈景主題範本檔案，並於 <code>&lt;body&gt;</code> 標籤後，加入下列程式碼片段:<br />\n"
+"\t\t\t\t\t<code>&lt;?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?&gt;</code>"
+
+#: admin/admin.php:759
+msgid "Container code compatibility mode"
+msgstr "GTM 容器代碼相容模式"
+
+#: admin/admin.php:748
+msgid ""
+"Turning OFF the Google Tag Manager container itself will remove both the head and the body part of the container code but leave data layer codes working.<br/>\n"
+"\t\t\t\t\tThis should be only used in specific cases where you need to place the container code manually or using another tool."
+msgstr "停用 Google 代碼管理工具容器會移除 head 與 body 中的容器程式碼，但是資料層變數仍會維持運作。<br/>只有在透過其他外掛或透過手動插入容器代碼時，才需要選擇停用。"
+
+#: admin/admin.php:741
+msgid "Container code ON/OFF"
+msgstr "啟用/停用容器代碼"
+
+#: admin/admin.php:279
+msgid "Manually coded (needs tweak in your template)"
+msgstr "手動輸入程式碼 (須要自己在佈景主題內調校)"
+
+#: admin/admin.php:278
+msgid "Footer of the page (not recommended by Google, Search Console verification will not work)"
+msgstr "頁面頁尾 (Google 不建議這麼做，無法用來驗證 Search Console 的所有權)"
+
+#: admin/admin.php:277
+msgid "Off (no tweak, right placement)"
+msgstr "停用相容模式 (無須調校，會安裝於正確位置)"
+
+#: admin/admin.php:269
+msgid "Off"
+msgstr "停用"
+
+#: admin/admin.php:268
+msgid "On"
+msgstr "啟用"
+
+#: admin/admin-tab-advanced.php:49
+msgid "Do not load GTM container on the frontend if role of the logged in user is any of this"
+msgstr "如果已登入的使用者擁有以下角色，將不會載入 GTM 容器"
+
+#: admin/admin-tab-advanced.php:48
+msgid "User roles to exclude"
+msgstr "排除以下使用者角色"
+
+#: admin/admin-tab-advanced.php:39
+msgid "Enter your custom domain name if you are using a server side GTM container for tracking. Do not include https:// prefix. Leave this blank to use www.googletagmanager.com"
+msgstr "如果你使用伺服器端 GTM 容器進行追蹤，請輸入你的自訂網域名稱。請不要包含 https:// 等前綴。如果此處留空，則會使用 www.googletagmanager.com 作為預設網域名稱。"
+
+#: admin/admin-tab-integrate.php:126
+msgid ""
+"Turn this on to prevent the plugin to flag orders as being already tracked.<br /><br />\n"
+"\t\t\t \tLeaving this unchecked ensures that no order data will be tracked multiple times\n"
+"\t\t\t\tin any ad or measurement system.<br />\n"
+"\t\t\t\tPlease only turn this feature on if you really need it!"
+msgstr ""
+"啟用此選項以避免外掛將訂單標記為 [已追蹤]<br /><br />\n"
+"\t\t\t\t為了避免廣告或分析工具重複追蹤個別訂單，<strong>請不要</strong>勾選這個功能。<br />\n"
+"\t\t\t\t只在你真的需要這項功能時啟用他。"
+
+#: admin/admin-tab-integrate.php:14
+msgid "Check this to fire dataLayer events after Contact Form 7 submissions (supported events: invalid input, spam detected, form submitted, form submitted and mail sent, form submitted and mail send failed)."
+msgstr "選取此選項，以在 Contact Form 7 送出表單後觸發資料層事件 (支援事件: 無效輸入、偵測到垃圾訊息、送出表單、送出表單且寄出電子郵件、送出表單但寄送電子郵件失敗)。"
+
+#: admin/admin.php:1048
+msgid "Cookiebot"
+msgstr "Cookiebot"
+
+#: admin/admin-tab-advanced.php:38
+msgid "Container domain name"
+msgstr "容器網域名稱"
+
+#: admin/admin-tab-integrate.php:179
+msgid "Cookiebot auto blocking"
+msgstr "自動阻擋 Cookiebot"
+
+#: admin/admin-tab-integrate.php:92
+msgid "Google Ads Business Vertical"
+msgstr "Google Ads 業務類型"
+
+#: admin/admin-tab-integrate.php:83
+msgid "To prevent duplicate transaction tracking at the order received page, enter the maximum age (in minutes) of the order or its payment for the transaction to be measured. Viewing the order received page of older orders will be ignored from transaction tracking, as it is considered to be a measured in an earlier session."
+msgstr "請輸入計算單筆訂單的最大時效，以避免瀏覽訂單完成頁面導致重複追蹤交易。外掛會於追蹤交易時，忽略檢視舊訂單完成頁面的流量，將其視為已於前次工作階段完成的事件。"
+
+#: admin/admin-tab-integrate.php:82
+msgid "Only track orders younger than"
+msgstr "僅追蹤"
+
+#: admin/admin.php:1044
+msgid "Blacklist variables"
+msgstr "禁用變數"
+
+#: admin/admin.php:1043
+msgid "Blacklist triggers"
+msgstr "禁用觸發條件"
+
+#: admin/admin.php:873
+msgid "Custom tag/variable templates"
+msgstr "自訂代碼/變數範本"
+
+#: admin/admin.php:853
+msgid "Security"
+msgstr "安全性"
+
+#: admin/admin.php:359
+msgid "Block all, except the checked items on all blacklist tabs (whitelist)"
+msgstr "除了下方選取的項目外，全部禁用 (啟用清單)"
+
+#: admin/admin.php:358
+msgid "Allow all, except the checked items on all blacklist tabs (blacklist)"
+msgstr "除了下方選取的項目外，全部啟用 (禁用清單)"
+
+#: admin/admin.php:198
+msgid "For example blacklisting everything and only whitelisting the Google Analytics tag without whitelisting the URL variable type will cause your Google Analytics tags to be blocked anyway since the attached triggers (Page View) can not fire!"
+msgstr "舉例來說，如果禁用除了 Google Analytics 代碼外的所有代碼，卻沒有允許啟用 URL 變數，將會導致 Google Analytics 遭禁用，因為相對應的觸發條件 (頁面瀏覽) 無法觸發。"
+
+#: integration/woocommerce.php:1328
+msgid "Grouped Product Detail Page"
+msgstr "組合商品詳情"
+
+#: admin/admin-tab-integrate.php:73
+msgid "Enable this to add all order attribute into the data layer on the order received page regardless and independently from classic and enhanced ecommerce tracking (WooCommerce 3.x required)"
+msgstr "啟用本功能，不論使用的是標準或加強型電子商務追蹤，此功能會獨立建立一個資料層變數，在〈已收到訂單〉頁面中將所有訂單屬性納入資料層變數。 (須要 WooCommerce 3.x 以後的版本)"
+
+#: admin/admin-tab-integrate.php:72
+msgid "Order data in data layer"
+msgstr "訂單資料納入資料層變數"
+
+#: admin/admin.php:1049
+msgid "Weather & geo data"
+msgstr "天氣與地理資料"
+
+#: admin/admin-tab-integrate.php:88
+msgid "Enable this to exclude shipping costs from the revenue variable while generating the purchase data"
+msgstr "啟用本功能，在產生購買資料時，會將收益中的運費排除"
+
+#: admin/admin-tab-integrate.php:87
+msgid "Exclude shipping from revenue"
+msgstr "收益扣除運費"
+
+#: admin/admin-tab-integrate.php:63
+msgid "Select which custom taxonomy is being used to add the brand of products"
+msgstr "選擇欲作為商品品牌名稱的自訂分類法"
+
+#: admin/admin-tab-integrate.php:62
+msgid "Taxonomy to be used for product brands"
+msgstr "作為商品品牌的分類法"
+
+#: admin/admin-tab-integrate.php:53
+msgid "Enable this option to include the content of the cart in the data layer on each page. Needs WooCommerce v3.2 or newer. Especially useful for site personalization tools."
+msgstr "啟用此選項，以將購物車的內容加入每一頁的資料層變數中。此功能須要安裝 WooCommerce v3.2 或更新的版本。這項功能對建立網站個人化體驗尤其有用。"
+
+#: admin/admin-tab-integrate.php:52
+msgid "Cart content in data layer"
+msgstr "將購物車內容納入資料層"
+
+#: admin/admin-tab-basicdata.php:144
+msgid "Add the country code of the user provided by Cloudflare (if Cloudflare is used with your site)"
+msgstr "將 Cloudflare 提供的使用者國家代碼納入資料層變數 (網站需要使用 Cloudflare 服務)"
+
+#: admin/admin-tab-basicdata.php:143
+msgid "Cloudflare country code"
+msgstr "Cloudflare 國家代碼"
+
+#: admin/admin-tab-basicdata.php:64
+msgid "Check this option to include taxonomy values associated with a given post."
+msgstr "選取此選項，將指定文章的分類詞彙納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:63
+msgid "Post Terms"
+msgstr "文章分類詞彙"
+
+#: admin/admin.php:1047
+msgid "Accelerated Mobile Pages"
+msgstr "AMP"
+
+#: admin/admin.php:614
+msgid "Invalid AMP Google Tag Manager Container ID. Valid ID format: GTM-XXXXX. Use comma without additional space (,) to enter more than one ID."
+msgstr "無效的 Google 代碼管理工具 AMP 容器 ID。有效的容器 ID 格式為 GTM-XXXXX。在輸入多個容器 ID 時，請使用半型逗號 (,) 區隔，並請<strong>不要</strong>加上額外的空格。"
+
+#: admin/admin-tab-advanced.php:29
+msgid "Turning on this option will load your Google Tag Manager container as early as possible during page load. This can cause issues if you are using jQuery in your custom HTML tags that fire on 'Page View' events."
+msgstr "啟用這項選項後，將會儘快在載入頁面時載入 Google 代碼管理工具的容器。然而如果是以 [頁面瀏覽] 為觸發條件，在自訂 HTML 代碼中使用 jQuery 時可能會產生問題。"
+
+#: admin/admin-tab-advanced.php:28
+msgid "Load GTM container as early as possible"
+msgstr "儘快載入 GTM 容器"
+
+#: admin/admin-tab-integrate.php:168
+msgid ""
+"This does not seems to be a valid Google Tag Manager Container ID! Valid format: GTM-XXXXXX\n"
+"\t\t\t\twhere X can be numbers and capital letters. Use comma without any space (,) to enter multpile IDs."
+msgstr "這似乎不是個有效的 Google 代碼管理工具容器 ID。有效的格式為 GTM-XXXXX，其中 X 可能是數字或大寫字母。如需輸入多個容器 ID，請使用半型逗號 (,) 做區隔，也不要在逗號後加上額外的空格。"
+
+#. translators: 1: opening anchor tag for a link pointing to the official GTM
+#. help center article about the AMP container snippet 2: Closing anchor tag.
+#: admin/admin-tab-integrate.php:159
+msgid ""
+"Enter a comma separated list of Google Tag Manager container IDs that you would like to use on your site.\n"
+"\t\t\t\tThis plugin will add the %1$sAMP GTM snippet%2$s to your AMP pages."
+msgstr ""
+"輸入半型逗號 (,) 區隔你想要在網站上使用的 AMP Google 代碼管理工具容器 ID 清單。\n"
+"\t\t\t\t\t本外掛將會在所有頁面新增 %1$sAMP GTM 程式碼片段%2$s。"
+
+#: admin/admin-tab-integrate.php:156
+msgid "Google Tag Manager 'AMP' Container ID"
+msgstr "Google 代碼管理工具 AMP 容器 ID"
+
+#: admin/admin-tab-integrate.php:124
+msgid "Do not flag orders as being tracked"
+msgstr "不要將訂單標記為已追蹤"
+
+#: admin/admin-tab-integrate.php:40
+msgid "Products per impression"
+msgstr "每次曝光商品數"
+
+#: admin/admin-tab-integrate.php:78
+msgid "Enable this to exclude tax from the revenue variable while generating the purchase data"
+msgstr "啟用本功能，在產生購買資料時，會將收益中的稅排除"
+
+#: admin/admin-tab-integrate.php:77
+msgid "Exclude tax from revenue"
+msgstr "未稅收益"
+
+#: admin/admin-tab-events.php:24
+msgid "Check this option to include a Tag Manager event when an existing user has been logged in on the frontend of your site (admin events not included)"
+msgstr "選取此選項，在使用者網站前端登入時，觸發代碼管理工具事件 (控制台內不會觸發)"
+
+#: admin/admin-tab-events.php:23
+msgid "User logged in"
+msgstr "使用者登入"
+
+#: admin/admin-tab-events.php:19
+msgid "Check this option to include a Tag Manager event when a new user registration has been completed on the frontend of your site (admin events not included)"
+msgstr "選取此選項，在新使用者於網站介面完成註冊時，觸發代碼管理工具事件 (控制台內不會觸發)"
+
+#: admin/admin-tab-events.php:18
+msgid "New user registration"
+msgstr "新帳號註冊"
+
+#: admin/admin-tab-basicdata.php:130
+msgid "IPStack.com API key"
+msgstr "IPStack.com API 金鑰"
+
+#: admin/admin-tab-basicdata.php:104
+msgid "Check this option to include the IP address of the visitor. You might use this to filter internal traffic inside your GTM container. Please be aware that per GDPR its not allowed to transmit this full IP address to Google Analytics or to any other measurement system without explicit consent from the visitor."
+msgstr "選取此選項，將訪客的 IP 位址納入資料層變數。你可以用它搭配 GTM 容器篩選內部流量。請注意，根據《一般資料保護規範》(GDPR)，你不能在未獲得訪客明確同意的情況下，將完整的 IP 位址傳入 Google Analytics 或任何計測系統中。"
+
+#: admin/admin-tab-basicdata.php:103
+msgid "Visitor IP"
+msgstr "訪客 IP"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: duracelltomi-google-tag-manager-for-wordpress.php
+msgid "https://gtm4wp.com/"
+msgstr "https://gtm4wp.com/"
+
+#: public/frontend.php:558 public/frontend.php:559 public/frontend.php:560
+#: public/frontend.php:561 public/frontend.php:562 public/frontend.php:563
+#: public/frontend.php:564 public/frontend.php:565
+msgid "(no geo data available)"
+msgstr "(沒有可使用的位置資料)"
+
+#: admin/admin.php:1268
+msgid "Incomplete Google Tag Manager environment configuration: either gtm_preview or gtm_auth parameter value is missing!"
+msgstr "不完整的 Google 代碼管理工具環境設定: 缺少 gtm_preview 或 gtm_auto 的參數值。"
+
+#: admin/admin.php:1053
+msgid "Misc"
+msgstr "雜項"
+
+#: admin/admin.php:646
+msgid "Invalid gtm_preview environment parameter value. It should have the format 'env-NN' where NN is an integer number."
+msgstr "無效的 gtm_preview 環境參數值。正確格式為「env-NN」，其中 NN 為整數數字。"
+
+#: admin/admin.php:643
+msgid "Invalid gtm_auth environment parameter value. It should only contain letters, numbers or the '-' and '_' characters."
+msgstr "無效的 gtm_auth 環境參數值。正確格式應只包含字母、數字與連字號 (-) 與底線 (_)。"
+
+#: admin/admin.php:352
+msgid "This does not seems to be a valid gtm_preview parameter! It should have the format &quot;env-NN&quot; where NN is an integer number. Please check and try again"
+msgstr "這似乎不是有效的 gtm_preview 參數值，正確格式應為「env-NN」，其中 NN 為整數。請檢查後再試一次。"
+
+#: admin/admin.php:319
+msgid "This does not seems to be a valid gtm_auth parameter! It should only contain letters, number and the &quot;-&quot; character. Please check and try again"
+msgstr "這似乎不是有效的 gtm_auth 參數值！正確格式應只包含字母、數字與連字號 (-)。請檢查後再試一次。"
+
+#: admin/admin-tab-advanced.php:23
+msgid "Environment gtm_preview parameter"
+msgstr "環境參數 gtm_preview"
+
+#: admin/admin-tab-advanced.php:19 admin/admin-tab-advanced.php:24
+msgid "Enter the gtm_auth parameter of the Google Tag Manager environment that has to be activated on this site. Both gtm_auth and gtm_preview parameters are required to activate the desired environment."
+msgstr "輸入欲在本網站啟用的 Google 代碼管理工具環境參數 gtm_auth。必須同時輸入 gtm_auth 與 gtm_preview 兩種參數，才能啟用目標環境。"
+
+#: admin/admin-tab-advanced.php:18
+msgid "Environment gtm_auth parameter"
+msgstr "環境參數 gtm_auth"
+
+#: admin/admin-tab-integrate.php:58
+msgid "Check this to inclulde the full category path of each product in enhanced ecommerce tracking. WARNING! This can lead to performance issues on large sites with lots of traffic!"
+msgstr "選取此選項，以包含各商品的完整分類路徑，供加強型電子商務追蹤用。注意！如果是大流量的網站，很有可能導致網站效能問題。"
+
+#: admin/admin-tab-integrate.php:57
+msgid "Include full category path."
+msgstr "包含完整分類路徑"
+
+#: admin/admin-tab-integrate.php:68
+msgid "Enable this to add all customer data (billing and shipping data, total number of orders and order value) into the data layer (WooCommerce 3.x required)"
+msgstr "啟用本功能以將所有顧客資料 (帳單、運送方式、總訂單數與訂單價值)納入資料層 (須要 WooCommerce 3.x 以後的版本)"
+
+#: admin/admin-tab-integrate.php:67
+msgid "Customer data in data layer"
+msgstr "顧客資料納入資料層"
+
+#: admin/admin-tab-basicdata.php:126
+msgid "Add geo data (latitude, longitude, country, city, etc) of the current visitor (provided by ipstack.com)"
+msgstr "新增當前訪客的地理資訊 (緯度、經度、國家、城市等，資料來源為 ipstack.com)"
+
+#: admin/admin-tab-basicdata.php:125
+msgid "Geo data"
+msgstr "地理資料"
+
+#: admin/admin-tab-basicdata.php:89
+msgid "Check this option to include the username of the logged in user."
+msgstr "選取此選項，將已登入使用者名稱納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:88
+msgid "Logged in user name"
+msgstr "已登入使用者名稱"
+
+#: admin/admin-tab-basicdata.php:59
+msgid "Check this option to include the post format."
+msgstr "選取此選項，將文章格式納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:58
+msgid "Post Format"
+msgstr "文章格式"
+
+#: integration/woocommerce.php:975
+msgid "Upsell Products"
+msgstr "追加銷售商品"
+
+#: integration/woocommerce.php:960
+msgid "Cross-Sell Products"
+msgstr "交叉銷售商品"
+
+#: admin/admin-tab-basicdata.php:99
+msgid "Check this option to include the date of creation (registration) of the logged in user."
+msgstr "選取此選項，將已登入使用者的註冊日期納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:98
+msgid "Logged in user creation date"
+msgstr "已登入使用者帳號建立日期"
+
+#: admin/admin-tab-integrate.php:110
+msgid "Some product feed generator plugins prefix product IDs with a fixed text like 'woocommerce_gpf'. You can enter this prefix here so that tags in your website include this prefix as well."
+msgstr "部分自動產生商品動態資訊的外掛，會在商品 ID 前加上特定的前綴文字，如「woocommerce_gpf」。你可以在此輸入這個前綴，如此一來，你的代碼也能夠使用這個包含這個前綴的變數。"
+
+#: admin/admin-tab-integrate.php:109
+msgid "Product ID prefix"
+msgstr "商品 ID 前綴"
+
+#: admin/admin-tab-integrate.php:115
+msgid "Check this to use product SKU instead of the ID of the products for remarketing and ecommerce tracking. Will fallback to ID if no SKU is set."
+msgstr "選取此選項，將商品貨號取代商品頁 ID，以供再行銷與電子商務追蹤使用。如果沒有商品貨號時，將回傳商品頁 ID。"
+
+#: admin/admin-tab-basicdata.php:94
+msgid "Check this option to include the email address of the logged in user."
+msgstr "選取此選項，將當前登入使用者的電子郵件地址納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:93
+msgid "Logged in user email"
+msgstr "已登入使用者電子信箱"
+
+#: admin/admin-tab-basicdata.php:29
+msgid "Check this option to include the ID of the author on the current post or author page."
+msgstr "選取此選項，將當前文章或作者介紹頁面的作者 ID 納入資料層變數。"
+
+#: admin/admin.php:1052
+msgid "Site"
+msgstr "網站"
+
+#: admin/admin-tab-basicdata.php:195
+msgid "Name of the current site in a WordPress Multisite environment"
+msgstr "在 WordPress 多站網路下，當前網站的名稱"
+
+#: admin/admin-tab-basicdata.php:194
+msgid "Site name"
+msgstr "網站名稱"
+
+#: admin/admin-tab-basicdata.php:190
+msgid "ID of the current site in a WordPress Multisite environment"
+msgstr "使用 WordPress 多站網路環境時，當前網站的 ID"
+
+#: admin/admin-tab-basicdata.php:189
+msgid "Site ID"
+msgstr "網站 ID"
+
+#: admin/admin-tab-basicdata.php:28
+msgid "Post author ID"
+msgstr "文章作者 ID"
+
+#: admin/admin-tab-basicdata.php:176
+msgid "OpenWeatherMap API key"
+msgstr "OpenWeatherMap API 金鑰"
+
+#: integration/woocommerce.php:1056
+msgid "Featured Products"
+msgstr "精選商品"
+
+#: integration/woocommerce.php:1044
+msgid "Top Rated Products"
+msgstr "最高評分的商品"
+
+#: integration/woocommerce.php:1032
+msgid "Best Selling Products"
+msgstr "最暢銷商品"
+
+#: integration/woocommerce.php:1020
+msgid "Sale Products"
+msgstr "促銷商品"
+
+#: integration/woocommerce.php:1008
+msgid "Recent Products"
+msgstr "最新商品"
+
+#: integration/woocommerce.php:994
+msgid " (widget)"
+msgstr " (小工具)"
+
+#: integration/woocommerce.php:945 integration/woocommerce.php:1068
+msgid "Related Products"
+msgstr "相關商品"
+
+#: integration/woocommerce.php:1156
+msgid "General Product List"
+msgstr "一般商品列表"
+
+#: integration/woocommerce.php:1152
+msgid "Search Results"
+msgstr "搜尋結果"
+
+#: admin/admin.php:735
+msgid "Enter your Google Tag Manager ID here. Use comma without space (,) to enter multiple IDs."
+msgstr "在這裡輸入你的 Google 代碼管理工具的容器 ID。如果使用多個容器，請使用半型逗號 (,) 做區隔，並請不要在逗號後面加上空格。"
+
+#: admin/admin.php:635
+msgid "Invalid Google Tag Manager ID. Valid ID format: GTM-XXXXX. Use comma without additional space (,) to enter more than one container ID."
+msgstr "無效的 Google 代碼管理工具容器 ID。有效的容器 ID 格式為 GTM-XXXXX。在輸入多個容器 ID 時，請使用半型逗號 (,) 區隔，並請<strong>不要</strong>加上額外的空格。"
+
+#: admin/admin.php:260
+msgid "This does not seems to be a valid Google Tag Manager ID! Valid format: GTM-XXXXX where X can be numbers and capital letters. Use comma without any space (,) to enter multpile container IDs."
+msgstr "這似乎不是個有效的 Google 代碼管理工具容器 ID。有效的格式為 GTM-XXXXX，其中 X 可能是數字或大寫字母。如需輸入多個容器 ID，請使用半型逗號 (,) 做區隔，也不要在逗號後加上額外的空格。"
+
+#: admin/admin-tab-basicdata.php:54
+msgid "Check this option to include the post id."
+msgstr "選取此選項，將文章 ID 納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:53
+msgid "Post ID"
+msgstr "文章 ID"
+
+#. Author of the plugin
+#: duracelltomi-google-tag-manager-for-wordpress.php
+msgid "Thomas Geiger"
+msgstr "Thomas Geiger"
+
+#. Description of the plugin
+#: duracelltomi-google-tag-manager-for-wordpress.php
+msgid "The first Google Tag Manager plugin for WordPress with business goals in mind"
+msgstr "第一款為商業用途考量製作的 WordPress 專用 Google 代碼管理工具外掛。"
+
+#: public/frontend.php:548 public/frontend.php:549
+msgid "(no weather data available)"
+msgstr "(沒有可使用的天氣資料)"
+
+#: admin/admin.php:1354
+msgid "Settings"
+msgstr "設定"
+
+#: admin/admin.php:1283
+msgid "Notice: you should deactivate the plugin \"Google Analytics for WordPress by MonsterInsights\" if you are using Google Analytics tags inside Google Tag Manager!"
+msgstr "注意: 如果你已經將 Google 分析的追蹤碼埋入 Google 代碼管理工具，你應該要停用 Google Analytics for WordPress by MonsterInsights 外掛。"
+
+#: admin/admin.php:1279
+msgid "Notice: you should deactivate the plugin \"WooCommerce Google Analytics Integration\" if you are using Google Analytics tags inside Google Tag Manager!"
+msgstr "注意: 如果你已經將 Google Analytics (分析) 的追蹤碼埋入 Google 代碼管理工具，你應該要停用 WooCommerce Google Analytics Integration 外掛。"
+
+#. translators: 1: opening anchor element pointing to the GTM4WP options page.
+#. 2: clsing anchor element.
+#: admin/admin.php:1252
+msgid "To start using Google Tag Manager for WordPress, please %1$senter your GTM ID%2$s"
+msgstr "在開始使用 Google Tag Manager for WordPress 之前，請先%1$s輸入 GTM 容器 ID%2$s"
+
+#: admin/admin.php:1051
+msgid "Media events"
+msgstr "媒體播放器事件"
+
+#: admin/admin.php:1050
+msgid "General events"
+msgstr "一般事件"
+
+#: admin/admin.php:1046
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: admin/admin.php:1041
+msgid "Browser/OS/Device"
+msgstr "瀏覽器、作業系統、裝置資料"
+
+#: admin/admin.php:1040
+msgid "Visitors"
+msgstr "訪客"
+
+#: admin/admin.php:1039
+msgid "Search"
+msgstr "搜尋"
+
+#: admin/admin.php:1038
+msgid "Posts"
+msgstr "網站內容"
+
+#: admin/admin.php:1015
+msgid "Google Tag Manager"
+msgstr "Google Tag Manager"
+
+#: admin/admin.php:1014
+msgid "Google Tag Manager for WordPress settings"
+msgstr "Google Tag Manager for WordPress 設定"
+
+#: admin/admin.php:990
+msgid "Google Tag Manager for WordPress options"
+msgstr "Google Tag Manager for WordPress 選項"
+
+#: admin/admin.php:960
+msgid "Author"
+msgstr "外掛開發者"
+
+#: admin/admin.php:953
+msgid "Credits"
+msgstr "製作群"
+
+#: admin/admin-tab-advanced.php:14
+msgid "In some cases you need to rename the dataLayer variable. You can enter your name here. Leave black for default name: dataLayer"
+msgstr "有些狀況下，你需要重新替資料層變數命名。你可以在這輸入你自訂的名稱，或是留空保持預設名稱 dataLayer"
+
+#: admin/admin-tab-advanced.php:13
+msgid "dataLayer variable name"
+msgstr "資料層變數名稱"
+
+#: admin/admin.php:928
+msgid "Advanced"
+msgstr "進階設定"
+
+#: admin/admin.php:903
+msgid "Integration"
+msgstr "整合功能"
+
+#: admin/admin.php:1042
+msgid "Blacklist tags"
+msgstr "禁用代碼"
+
+#: admin/admin.php:829
+msgid "Scroll tracking"
+msgstr "捲動追蹤"
+
+#: admin/admin.php:805
+msgid "Events"
+msgstr "事件"
+
+#: admin/admin.php:781
+msgid "Basic data"
+msgstr "基本資料"
+
+#: admin/admin.php:729
+msgid "Google Tag Manager ID"
+msgstr "Google 代碼管理工具容器 ID"
+
+#: admin/admin.php:722
+msgid "General"
+msgstr "一般設定"
+
+#: admin/admin.php:640
+msgid "Invalid dataLayer variable name. Please start with a character from a-z or A-Z followed by characters from a-z, A-Z, 0-9 or '_' or '-'!"
+msgstr "無效的資料層變數名稱。請以英文字母 (a-z/A-Z) 為字首，後續字元僅限英文字母、數字、底線 (_) 或連字號 (-)。"
+
+#: admin/admin.php:367
+msgid "Fahrenheit"
+msgstr "華氏 ℉"
+
+#: admin/admin.php:366
+msgid "Celsius"
+msgstr "攝氏 ℃"
+
+#: admin/admin.php:357
+msgid "Disable feature: control everything on Google Tag Manager interface"
+msgstr "停用: 透過 Google 代碼管理工具介面操控"
+
+#: admin/admin.php:287
+msgid "This does not seems to be a valid JavaScript variable name! Please check and try again"
+msgstr "這似乎不是有效的 JavaScript 變數名稱，請檢查後重試。"
+
+#: admin/admin.php:213
+msgid "Some info about the author of this plugin"
+msgstr "關於外掛開發者的資訊"
+
+#: admin/admin.php:208
+msgid "You usually do not need to modify thoose settings. Please be carefull while hacking here."
+msgstr "基本上你不需要調整這些設定。在使用這些進階設定時請三思。"
+
+#: admin/admin.php:203
+msgid "Google Tag Manager for WordPress can integrate with several popular plugins. Please check the plugins you would like to integrate with:"
+msgstr "Google Tag Manager for WordPress 整合了許多熱門的外掛，請嘗試下列欲整合的外掛："
+
+#: admin/admin.php:196
+msgid "Do not modify if you do not know what to do, since it can cause issues with your tag deployment!"
+msgstr "如果你不知道該做什麼，請不要任意更改，因為這有可能會讓你在部署代碼時發生問題！"
+
+#: admin/admin.php:194
+msgid "Here you can control which types of tags, triggers and variables can be executed on your site regardless of what tags are included in your container on the Google Tag Manager site. Use this to increase security!"
+msgstr "不論安裝什麼代碼於你的 Google 代碼管理工具容器中，你都可以在這裡控制是否在站內執行這些代碼或變數，藉此提高安全性。"
+
+#: admin/admin.php:179
+msgid "Fire tags based on how the visitor scrolls through your page."
+msgstr "根據使用者捲動頁面的情形觸發代碼。"
+
+#: admin/admin.php:174
+msgid "Fire tags in Google Tag Manager on special events on your website"
+msgstr "在發生特定事件時，觸發 Google 代碼管理工具裡的代碼"
+
+#. translators: 1: opening anchor tag that points to WhichBrowser website. 2:
+#. closing anchor tag.
+#: admin/admin.php:163
+msgid "* Browser, OS and Device data is provided using %1$sWhichBrowser%2$s library."
+msgstr "* 瀏覽器、作業系統與裝置資料是由 %1$sWhichBrowser%2$s 提供的程式庫進行偵測。"
+
+#: admin/admin.php:159
+msgid "Here you can check what data is needed to be included in the dataLayer to be able to access them in Google Tag Manager"
+msgstr "你可以在這裡勾選想要包含在資料層的資料，以供 Google 代碼管理工具使用"
+
+#: admin/admin-tab-integrate.php:114
+msgid "Use SKU instead of ID"
+msgstr "使用商品貨號 (SKU) 取代文章 ID"
+
+#: admin/admin-tab-integrate.php:13 admin/admin.php:1045
+msgid "Contact Form 7"
+msgstr "Contact Form 7"
+
+#: admin/admin.php:860
+msgid "Enable blacklist/whitelist"
+msgstr "開啟禁用清單/啟用清單"
+
+#: admin/admin-tab-scrolltracking.php:39
+msgid "Enter the number of seconds after the the scroller user is being treated as a reader, someone who really reads the content, not just scrolls through it."
+msgstr "輸入秒數，以判定捲動頁面的使用者是否為閱讀內容的讀者，而非隨意捲動頁面。"
+
+#: admin/admin-tab-scrolltracking.php:38
+msgid "Scroller time"
+msgstr "捲動時間"
+
+#: admin/admin-tab-scrolltracking.php:34
+msgid "Enter the DOM ID of the content element in your template. Leave it empty for default(content). Do not include the # sign."
+msgstr "輸入佈景主題中主要內容區塊的 DOM 元素 ID。可以留空以使用預設值 (content)。不需要加入 # 符號。"
+
+#: admin/admin-tab-scrolltracking.php:33
+msgid "Content ID"
+msgstr "內容 ID"
+
+#: admin/admin-tab-scrolltracking.php:29
+msgid "The minimum amount of pixels that a visitor has to scroll before we treat the move as scrolling."
+msgstr "判定使用者開始捲動多少像素後，才算真的在捲動頁面。"
+
+#: admin/admin-tab-scrolltracking.php:28
+msgid "Minimum distance"
+msgstr "最小距離"
+
+#: admin/admin-tab-scrolltracking.php:24
+msgid "Enter the number of milliseconds after the script checks the current location. It prevents too many events being fired while scrolling."
+msgstr "確認當前位置後，再次確認位置的間隔時間 (毫秒)，避免在捲動過程中觸發過多事件。"
+
+#: admin/admin-tab-scrolltracking.php:23
+msgid "Time delay before location check"
+msgstr "檢查位置前的時間延遲"
+
+#: admin/admin-tab-scrolltracking.php:19
+msgid "Fire console.log() commands instead of dataLayer events."
+msgstr "觸發 console.log() 指令，而非資料層事件。"
+
+#: admin/admin-tab-scrolltracking.php:18
+msgid "Debug mode"
+msgstr "除錯模式"
+
+#: admin/admin-tab-scrolltracking.php:14
+msgid "Enable scroll tracker script on your website."
+msgstr "在網站中開啟捲動追蹤語法。"
+
+#: admin/admin-tab-scrolltracking.php:13
+msgid "Enabled"
+msgstr "啟用捲動追蹤"
+
+#: admin/admin-tab-events.php:39
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a Soundcloud media embeded on your site."
+msgstr "選取此選項，以在訪客與嵌入於站內的 Soundcloud 媒體互動時，觸發代碼管理工具事件。"
+
+#: admin/admin-tab-events.php:38
+msgid "Soundcloud events"
+msgstr "Soundcloud 事件"
+
+#: admin/admin-tab-events.php:34
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a Vimeo video embeded on your site."
+msgstr "選取此選項，以在訪客與嵌入於站內的 Vimeo 影片互動時，觸發代碼管理工具事件。"
+
+#: admin/admin-tab-events.php:33
+msgid "Vimeo video events"
+msgstr "Vimeo 影片事件"
+
+#: admin/admin-tab-events.php:29
+msgid "Check this option to include a Tag Manager event when a visitor interacts with a YouTube video embeded on your site."
+msgstr "選取此選項，以在訪客與嵌入於站內的 YouTube 影片互動時，觸發代碼管理工具事件。"
+
+#: admin/admin-tab-events.php:28
+msgid "YouTube video events"
+msgstr "YouTube 影片事件"
+
+#: admin/admin-tab-events.php:14
+msgid "Check this option to include a Tag Manager event when a visitor moves between elements of a form (comment, contact, etc)."
+msgstr "選取此選項，以在訪客於表單元素 (留言、聯絡表單等) 間移動時，觸發代碼管理工具事件。"
+
+#: admin/admin-tab-events.php:13
+msgid "Form fill events (gtm4wp.formElementEnter & gtm4wp.formElementLeave)"
+msgstr "表單填寫事件 (gtm4wp.formElementEnter 與 gtm4wp.formElementLeave)"
+
+#: admin/admin-tab-basicdata.php:172
+msgid "Select which temperature units you would like to use."
+msgstr "請選擇你希望使用的溫度單位。"
+
+#: admin/admin-tab-basicdata.php:171
+msgid "Weather data units"
+msgstr "天氣資料單位"
+
+#: admin/admin-tab-basicdata.php:148
+msgid "Weather data"
+msgstr "天氣資料"
+
+#: admin/admin-tab-basicdata.php:122
+msgid "Check this option to include the type of device the user is currently using (desktop, tablet or mobile) including manufacturer and model data."
+msgstr "選取此選項，將訪客目前使用的裝置類型 (桌機、平板或手機)，包含製造商與型號納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:121
+msgid "Device data *"
+msgstr "裝置資料 *"
+
+#: admin/admin-tab-basicdata.php:118
+msgid "Check this option to include the name and version of the operating system the visitor uses."
+msgstr "選取此選項，將訪客目前使用的作業系統名稱與版本納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:117
+msgid "OS data *"
+msgstr "作業系統資料 *"
+
+#: admin/admin-tab-basicdata.php:114
+msgid "Check this option to include the name, version and engine data of the browser the visitor uses."
+msgstr "選取此選項，將訪客目前使用的瀏覽器的名稱、版本與瀏覽器核心資訊納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:113
+msgid "Browser data *"
+msgstr "瀏覽器資料 *"
+
+#: admin/admin-tab-basicdata.php:84
+msgid "Check this option to include the ID of the logged in user."
+msgstr "選取此選項，將目前登入的使用者 ID 納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:83
+msgid "Logged in user ID"
+msgstr "已登入使用者 ID"
+
+#: admin/admin-tab-basicdata.php:79
+msgid "Check this option to include the role of the logged in user."
+msgstr "選取此選項，將已登入使用者的角色納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:78
+msgid "Logged in user role"
+msgstr "已登入使用者角色"
+
+#: admin/admin-tab-basicdata.php:74
+msgid "Check this option to include whether there is a logged in user on your website."
+msgstr "選取此選項，以顯示目前訪客是否已登入。"
+
+#: admin/admin-tab-basicdata.php:73
+msgid "Logged in status"
+msgstr "登入狀態"
+
+#: admin/admin-tab-basicdata.php:69
+msgid "Check this option to include the search term, referring page URL and number of results on the search page."
+msgstr "選取此選項，將搜尋詞彙、參照頁面網址與搜尋頁的結果數目納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:68
+msgid "Search data"
+msgstr "站內搜尋資料"
+
+#: admin/admin-tab-basicdata.php:49
+msgid "Check this option to include the count of the posts currently shown on the page and the total number of posts in the category/tag/any taxonomy."
+msgstr "選取此選項，將目前頁面中顯示的文章數量，以及當前分類、標籤或任何分類法內含的文章總數納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:48
+msgid "Post count"
+msgstr "文章數量"
+
+#: admin/admin-tab-basicdata.php:44
+msgid "Check this option to include the title of the current post."
+msgstr "選取此選項，將當前文章的標題納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:43
+msgid "Post title"
+msgstr "文章標題"
+
+#: admin/admin-tab-basicdata.php:39
+msgid "Check this option to include the date of the current post. This will include 4 dataLayer variables: full date, post year, post month, post date."
+msgstr "選取此選項，將當前文章的日期資訊納入資料層變數。將產生四個資料層變數: full date、post year、post month 與 post date。"
+
+#: admin/admin-tab-basicdata.php:38
+msgid "Post date"
+msgstr "文章/頁面發布日期"
+
+#: admin/admin-tab-basicdata.php:34
+msgid "Check this option to include the name of the author on the current post or author page."
+msgstr "選取此選項，將當前文章或作者介紹頁面的作者名稱納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:33
+msgid "Post author name"
+msgstr "文章作者名稱"
+
+#: admin/admin-tab-basicdata.php:24
+msgid "Check this option to include the tags of the current post."
+msgstr "選取此選項，將當前文章使用的標籤納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:23
+msgid "Tags of current post"
+msgstr "當前文章使用標籤"
+
+#: admin/admin-tab-basicdata.php:19
+msgid "Check this option to include the category names of the current post or archive page"
+msgstr "選取此選項，將當前文章或彙整頁面的分類納入資料層變數。"
+
+#: admin/admin-tab-basicdata.php:18
+msgid "Category list of current post/archive"
+msgstr "當前文章/彙整頁面所屬分類清單"
+
+#: admin/admin-tab-basicdata.php:14
+msgid "Check this option to include the type of the current post or archive page (post, page or any custom post type)."
+msgstr "選取此選項，以納入當前文章或彙整頁面的文章類型 (文章、頁面或任何自訂文章類型)。"
+
+#: admin/admin-tab-basicdata.php:13
+msgid "Posttype of current post/archive"
+msgstr "當前文章/彙整頁的文章類型"

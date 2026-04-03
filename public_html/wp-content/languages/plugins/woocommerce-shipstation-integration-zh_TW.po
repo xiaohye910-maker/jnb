@@ -1,0 +1,658 @@
+# Translation of Plugins - ShipStation for WooCommerce - Stable (latest release) in Chinese (Taiwan)
+# This file is distributed under the same license as the Plugins - ShipStation for WooCommerce - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-03-25 09:57:53+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: zh_TW\n"
+"Project-Id-Version: Plugins - ShipStation for WooCommerce - Stable (latest release)\n"
+
+#: includes/class-auth-controller.php:251
+#: includes/class-auth-controller.php:275
+msgid "Failed to generate API credentials. Please try again or contact your hosting provider if the issue persists."
+msgstr "無法產生 API 憑證。 如果問題持續發生，請稍後再試一次，或聯絡主機服務提供者。"
+
+#: includes/checkout/class-checkout-rates-shipping-method.php:47
+msgid "Title"
+msgstr "標題"
+
+#: includes/checkout/class-checkout-rates-shipping-method.php:32
+msgid "Provide real-time shipping rates from ShipStation during checkout."
+msgstr "在結帳時提供 ShipStation 的即時運費。"
+
+#: includes/checkout/class-checkout-rates-shipping-method.php:31
+#: includes/checkout/class-checkout-rates-shipping-method.php:49
+msgid "ShipStation Rates"
+msgstr "ShipStation 運費"
+
+#: includes/api/rest/class-orders-controller.php:660
+msgid "Additional Discount"
+msgstr "額外折扣"
+
+#: includes/api/requests/class-wc-shipstation-api-export.php:110
+msgid "Invalid start_date or end_date format."
+msgstr "無效的 start_date 或 end_date 格式。"
+
+#: includes/data/data-settings.php:113
+msgid "Define the order status you wish to map for ShipStation \"Cancelled\" status. By default this is \"cancelled\"."
+msgstr "定義你要對應 ShipStation「已取消」狀態的訂單狀態。 依預設，這是「已取消」。"
+
+#: includes/data/data-settings.php:109
+msgid "Cancelled"
+msgstr "已取消"
+
+#: includes/data/data-settings.php:104
+msgid "Define the order status you wish to map for ShipStation \"Completed\" status. By default this is \"completed\"."
+msgstr "定義你要對應 ShipStation「已完成」狀態的訂單狀態。 依預設，這是「已完成」。"
+
+#: includes/data/data-settings.php:100
+msgid "Completed"
+msgstr "已完成"
+
+#: includes/data/data-settings.php:95
+msgid "Define the order status you wish to map for ShipStation \"OnHold\" status. By default this is \"on-hold\"."
+msgstr "定義你要對應 ShipStation「保留」狀態的訂單狀態。 依預設，這是「保留」。"
+
+#: includes/data/data-settings.php:91
+msgid "OnHold"
+msgstr "保留"
+
+#: includes/data/data-settings.php:86
+msgid "Define the order status you wish to map for ShipStation \"AwaitingShipment\" status. By default this is \"processing\"."
+msgstr "定義你要對應 ShipStation「等待出貨」狀態的訂單狀態。 依預設，這是「處理中」。"
+
+#: includes/data/data-settings.php:82
+msgid "Awaiting Shipment"
+msgstr "等待出貨"
+
+#: includes/data/data-settings.php:77
+msgid "Define the order status you wish to map for ShipStation \"AwaitingPayment\" status. By default this is \"pending\"."
+msgstr "定義你要對應 ShipStation「等待付款」狀態的訂單狀態。 依預設，這是「待確認」。"
+
+#: includes/data/data-settings.php:73
+msgid "Awaiting Payment"
+msgstr "正等待付款"
+
+#: includes/data/data-settings.php:68
+msgid "Define how the order status will be mapped."
+msgstr "定義訂單狀態的對應方式。"
+
+#: includes/data/data-settings.php:66
+msgid "Plugin"
+msgstr "外掛程式"
+
+#: includes/data/data-settings.php:62
+msgid "Status Mapping Mode"
+msgstr "狀態對應模式"
+
+#: includes/data/data-settings.php:54
+msgid "Current API mode."
+msgstr "目前的 API 模式。"
+
+#: includes/data/data-settings.php:52
+msgid "API Mode"
+msgstr "API 模式"
+
+#: includes/api/rest/class-orders-controller.php:1520
+msgid "You're using Shipment Tracking < 1.4.0. Please update!"
+msgstr "你使用的「貨件追蹤」< 1.4.0。請更新！"
+
+#: includes/api/rest/class-orders-controller.php:1342
+msgid "Skipped this item because doesnt have description and quantity: "
+msgstr "略過此項目，因為沒有說明和數量： "
+
+#. translators: %1$d is the order ID, %2$s is the order number.
+#: includes/api/rest/class-orders-controller.php:1327
+msgid "Order ID: %1$d or Order number: %2$s cannot be found."
+msgstr "找不到訂單 ID：%1$d 或訂單號碼：%2$s。"
+
+#: includes/api/rest/class-orders-controller.php:1321
+msgid "Order not found"
+msgstr "找不到訂單"
+
+#. translators: %1$s is the order id, %2$d is the notification id.
+#: includes/api/rest/class-orders-controller.php:1301
+msgid "Order ID: %1$d from notification ID: %2$s is not numeric."
+msgstr "通知 ID：%2$s 中的訂單 ID：%1$d 不是數字。"
+
+#: includes/api/rest/class-orders-controller.php:1297
+msgid "Order ID is not numeric"
+msgstr "訂單 ID 不是數字"
+
+#. translators: %1$s is the notification id.
+#: includes/api/rest/class-orders-controller.php:1288
+msgid "Notification ID: %1$s doesnt have order ID or items."
+msgstr "通知 ID：%1$s 沒有訂單 ID 或項目。"
+
+#: includes/api/rest/class-orders-controller.php:1284
+msgid "Empty order ID or items"
+msgstr "清空訂單 ID 或項目"
+
+#: includes/api/rest/class-orders-controller.php:1276
+msgid "Notification ID is empty for this notification: "
+msgstr "此通知的通知 ID 為空白： "
+
+#: includes/api/rest/class-orders-controller.php:1070
+msgid "Tax"
+msgstr "稅金"
+
+#. translators: %1$s is a coupon code.
+#: includes/api/rest/class-orders-controller.php:636
+msgid "Discount from coupon: %1$s"
+msgstr "優惠券折扣：%1$s"
+
+#. translators: 1: order id, 2: WC order status, 3: shipstation order status.
+#: includes/api/rest/class-orders-controller.php:484
+msgid "Order %1$s has an unmapped WooCommerce status (%2$s). Defaulting to ShipStation status \"%3$s\". Please review your status mappings."
+msgstr "訂單 %1$s 具有未對應的 WooCommerce 狀態 (%2$s)。 預設為 ShipStation 狀態「%3$s」。 請檢閱狀態對應。"
+
+#: includes/api/rest/class-orders-controller.php:397
+msgid "Error retrieving orders."
+msgstr "擷取訂單時發生錯誤。"
+
+#: includes/api/rest/class-orders-controller.php:364
+msgid "No order statuses provided in the request. Using default export statuses from the settings."
+msgstr "要求中未提供訂單狀態。 使用設定中的預設匯出狀態。"
+
+#: includes/api/rest/class-orders-controller.php:192
+msgid "Mapping of WooCommerce order statuses to ShipStation statuses. Format: wc_status:ShipStationStatus (e.g., processing:AwaitingShipment). Accepts multiple values."
+msgstr "將 WooCommerce 訂單狀態對映至 ShipStation 狀態。 格式：wc_status:ShipStationStatus (例如，processing:AwaitingShipment)。 接受多個值。"
+
+#: includes/api/rest/class-orders-controller.php:160
+msgid "Return orders modified after this date/time (ISO8601, UTC). Leave empty to ignore."
+msgstr "在此日期/時間之後修改的退貨訂單 (ISO8601，UTC)。 保留空白即可忽略。"
+
+#: includes/api/rest/class-inventory-controller.php:65
+#: includes/api/rest/class-orders-controller.php:181
+msgid "Maximum number of items to return per page (1–500)."
+msgstr "每頁退回的項目數量上限 (1-500)。"
+
+#: includes/api/rest/class-inventory-controller.php:54
+#: includes/api/rest/class-orders-controller.php:170
+msgid "Page number of the results to return."
+msgstr "要退回的結果頁碼。"
+
+#: templates/auth-modal.php:96
+msgid "Generate new REST-API keys"
+msgstr "產生新的 REST-API 金鑰"
+
+#: templates/auth-modal.php:85
+msgid "Site URL:"
+msgstr "網站 URL："
+
+#: templates/auth-modal.php:72
+msgid "ShipStation Authentication Key:"
+msgstr "ShipStation 驗證金鑰："
+
+#: templates/auth-modal.php:68
+msgid "For security, REST API keys are now hidden. To connect a new selling channel in ShipStation, generate new keys. This will invalidate the current ones."
+msgstr "為了安全起見，REST API 金鑰現已隱藏。 若要在 ShipStation 中連結新的銷售通路，請產生新金鑰。 這會使目前的金鑰失效。"
+
+#: templates/auth-modal.php:54
+msgid "Consumer Secret:"
+msgstr "消費者密鑰："
+
+#: templates/auth-modal.php:47 templates/auth-modal.php:60
+#: templates/auth-modal.php:78 templates/auth-modal.php:88
+msgid "Copy"
+msgstr "複製"
+
+#: templates/auth-modal.php:41
+msgid "Consumer Key:"
+msgstr "消費者金鑰："
+
+#. translators: 1: Opening <strong> tag, 2: Closing </strong> tag.
+#: templates/auth-modal.php:32
+msgid "For security reasons, REST API keys are only shown once. %1$sPlease copy and store them securely now. Once you refresh this page, they cannot be viewed again.%2$s If needed, you can generate new keys later, which will automatically invalidate the old ones."
+msgstr "為了安全起見，REST API 金鑰只會顯示一次。 %1$s請立即複製這些資訊並妥善保存。 重新整理此頁面後，就無法再檢視這些資訊。%2$s如有需要，你可以稍後產生新金鑰，舊金鑰會自動失效。"
+
+#: templates/auth-modal.php:22
+msgid "Loading..."
+msgstr "正在載入..."
+
+#: templates/auth-modal.php:15 templates/auth-modal.php:99
+msgid "Close"
+msgstr "關閉"
+
+#: templates/auth-modal.php:14
+msgid "ShipStation Connection Details"
+msgstr "ShipStation 連結詳細資料"
+
+#: includes/class-wc-shipstation-integration.php:571
+msgid "After logging in, add WooCommerce as a selling channel in ShipStation. Use your store's Auth Key and REST API credentials to connect. Once connected you're good to go!"
+msgstr "登入後，在 ShipStation 中將 WooCommerce 新增為銷售通路。 使用商店的驗證金鑰和 REST API 憑證來進行連結。 連結後，就大功告成了！"
+
+#: includes/class-auth-controller.php:309
+msgid "View Authentication Data"
+msgstr "檢視驗證資料"
+
+#: includes/class-auth-controller.php:241
+#: includes/class-auth-controller.php:269
+msgid "You do not have sufficient permissions."
+msgstr "你沒有足夠的權限。"
+
+#: includes/class-auth-controller.php:236
+#: includes/class-auth-controller.php:264
+msgid "Security check failed"
+msgstr "安全性檢查失敗"
+
+#: includes/class-auth-controller.php:135
+msgid "ShipStation Integration"
+msgstr "ShipStation 整合"
+
+#: includes/class-auth-controller.php:85
+msgid "Generating new REST API keys will disable your old keys. Connections using them will stop working until you update ShipStation. Continue?"
+msgstr "產生新的 REST API 金鑰會停用舊金鑰。 除非你更新 ShipStation，否則使用舊金鑰的連結會停止運作。 要繼續嗎？"
+
+#: includes/class-auth-controller.php:84
+msgid "Error loading authentication data"
+msgstr "載入驗證資料時發生錯誤"
+
+#: includes/class-auth-controller.php:83
+msgid "Hide"
+msgstr "隱藏"
+
+#: includes/class-auth-controller.php:82 templates/auth-modal.php:44
+#: templates/auth-modal.php:57 templates/auth-modal.php:75
+msgid "Show"
+msgstr "顯示"
+
+#: includes/class-auth-controller.php:81
+msgid "Copied!"
+msgstr "已複製！"
+
+#. Description of the plugin
+#: woocommerce-shipstation.php
+msgid "Power your entire shipping operation from one platform."
+msgstr "透過單一平台，強化整體運送作業。"
+
+#: includes/class-wc-shipstation-integration.php:482
+msgid "This feature requires WooCommerce 9.7.0 or higher."
+msgstr "這項功能需要 WooCommerce 9.7.0 或以上版本。"
+
+#: includes/data/data-settings.php:130
+msgid "Log all API interactions."
+msgstr "記錄所有 API 互動。"
+
+#: includes/data/data-settings.php:122
+msgid "Enable gift fields on the checkout page."
+msgstr "在結帳頁面啟用禮物欄位。"
+
+#: includes/data/data-settings.php:121
+msgid "Allow customer to mark their order as a gift and include a personalized message."
+msgstr "允許顧客將訂單標示為禮物，並附上個人化訊息。"
+
+#: includes/data/data-settings.php:119
+msgid "Enable Gift options at checkout page"
+msgstr "在結帳頁面啟用禮物選項"
+
+#: includes/data/data-settings.php:118
+msgid "Gift"
+msgstr "禮物"
+
+#: includes/class-checkout.php:577 includes/class-checkout.php:895
+#: includes/class-checkout.php:900
+msgid "Additional information"
+msgstr "其他資訊"
+
+#: includes/class-checkout.php:515
+msgid "No"
+msgstr "否"
+
+#: includes/class-checkout.php:515
+msgid "Yes"
+msgstr "是"
+
+#. translators: %1$d is the maximum length of the gift message.
+#: includes/class-checkout.php:358
+msgid "Please ensure the gift message does not exceed %d characters."
+msgstr "請確定禮物訊息未超過 %d 個字元。"
+
+#: includes/class-checkout.php:223
+msgid "optional"
+msgstr "選填"
+
+#. translators: %1$d is the maximum length of the gift message.
+#: includes/class-checkout.php:151
+msgid "Gift message, optional. Use this field to enter your gift message. Approximately %1$d characters."
+msgstr "禮物訊息，選填。 使用此欄位輸入禮物訊息。 大約 %1$d 個字元。"
+
+#: includes/class-checkout.php:147
+msgid "Message for the gift."
+msgstr "禮物訊息。"
+
+#. translators: %1$d is the maximum length of the gift message.
+#: includes/class-checkout.php:145
+msgid "Use the space above to enter your gift message. Approx., %1$d characters."
+msgstr "使用上方空格輸入禮物訊息。 大約 %1$d 個字元。"
+
+#: includes/class-checkout.php:143
+msgid "Add gift message"
+msgstr "新增禮物訊息"
+
+#: includes/class-checkout.php:142
+msgid "Gift message"
+msgstr "禮物訊息"
+
+#. translators: Aria-label for the gift message checkbox.
+#: includes/class-checkout.php:135
+msgid "Mark order as a gift. When enabled order will include an optional personal message on the packing slip."
+msgstr "將訂單標示為禮物。 啟用此功能後，訂單會在裝箱單附上選填的個人訊息。"
+
+#: includes/class-checkout.php:129
+msgid "Gift orders include an optional personal message on the packing slip."
+msgstr "禮物訂單在裝箱單附上選填的個人訊息。"
+
+#: includes/class-checkout.php:128
+msgid "Mark order as a gift"
+msgstr "將訂單標示為禮物"
+
+#: includes/class-checkout.php:127
+msgid "Send as gift"
+msgstr "送禮"
+
+#: includes/api/rest/class-inventory-controller.php:402
+msgid "No inventory changes made."
+msgstr "並未變更庫存。"
+
+#: includes/api/rest/class-inventory-controller.php:397
+msgid "Inventory updated with some errors."
+msgstr "庫存已更新，但發生一些錯誤。"
+
+#: includes/api/rest/class-inventory-controller.php:392
+msgid "No inventory updated due to errors."
+msgstr "由於發生錯誤，並未更新任何庫存。"
+
+#: includes/api/rest/class-inventory-controller.php:388
+msgid "Inventory updated successfully."
+msgstr "已成功更新庫存。"
+
+#: includes/api/rest/class-inventory-controller.php:369
+msgid "Product not found"
+msgstr "找不到商品"
+
+#: includes/api/rest/class-inventory-controller.php:355
+msgid "Stock quantity is not set or not numeric"
+msgstr "未設定庫存數量，或庫存數量並非數值"
+
+#: includes/api/rest/class-inventory-controller.php:347
+msgid "Product ID is not numeric"
+msgstr "商品 ID 並非數值"
+
+#: includes/api/rest/class-inventory-controller.php:339
+msgid "Invalid item"
+msgstr "無效項目"
+
+#: includes/api/rest/class-inventory-controller.php:285
+msgid "Error retrieving products."
+msgstr "擷取商品時發生錯誤。"
+
+#: includes/api/rest/class-inventory-controller.php:224
+msgid "Product not found."
+msgstr "找不到商品。"
+
+#: includes/api/rest/class-inventory-controller.php:111
+msgid "SKU of the product to retrieve stock data for."
+msgstr "用於擷取庫存資料的商品貨號。"
+
+#: includes/api/rest/class-inventory-controller.php:89
+msgid "ID of the product to retrieve stock data for."
+msgstr "用於擷取庫存資料的商品 ID。"
+
+#. Plugin Name of the plugin
+#: woocommerce-shipstation.php
+msgid "ShipStation for WooCommerce"
+msgstr "WooCommerce 的 ShipStation"
+
+#. translators: %1$s is order number, %2$d is order id
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:158
+msgid "Order number: %1$s or Order ID: %2$d can not be found."
+msgstr "訂單號碼：%1$s 或訂單 ID：找不到 %2$d。"
+
+#. translators: %s is an error message.
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:137
+msgid "Cannot parse XML : %s"
+msgstr "無法解析 XML：%s"
+
+#: includes/class-main.php:195
+msgid "Docs"
+msgstr "文件"
+
+#: includes/class-main.php:194
+msgid "Support"
+msgstr "技術支援"
+
+#: includes/class-main.php:193
+msgid "Settings"
+msgstr "設定"
+
+#. translators: %s WC download URL link.
+#: includes/class-main.php:67
+msgid "Shipstation requires WooCommerce to be installed and active. You can download %s here."
+msgstr "需要安裝並啟用 WooCommerce 才能使用 Shipstation。 你可以在此處下載 %s。"
+
+#: includes/data/data-settings.php:129
+msgid "Note: this may log personal information. We recommend using this for debugging purposes only and deleting the logs when finished."
+msgstr "注意：這可能會記錄個人資訊。 我們建議僅將此用於偵錯目的，並在完成時予以刪除。"
+
+#: includes/data/data-settings.php:127
+msgid "Enable Logging"
+msgstr "啟用記錄"
+
+#: includes/data/data-settings.php:126
+msgid "Logging"
+msgstr "記錄"
+
+#: includes/data/data-settings.php:47
+msgid "Define the order status you wish to update to once an order has been shipping via ShipStation. By default this is \"Completed\"."
+msgstr "定義 ShipStation 出貨後，要將訂單更新成何種狀態。 此設定預設為「已完成」。"
+
+#: includes/data/data-settings.php:44
+msgid "Shipped Order Status&hellip;"
+msgstr "出貨訂單狀態…"
+
+#: includes/data/data-settings.php:40
+msgid "Select Order Statuses"
+msgstr "選取訂單狀態"
+
+#: includes/data/data-settings.php:37
+msgid "Define the order statuses you wish to export to ShipStation."
+msgstr "定義要匯出到 ShipStation 的訂單狀態。"
+
+#: includes/data/data-settings.php:32
+msgid "Export Order Statuses&hellip;"
+msgstr "匯出訂單狀態…"
+
+#: includes/data/data-settings.php:24
+msgid "This is the <code>Auth Key</code> you set in ShipStation and allows ShipStation to communicate with your store."
+msgstr "這是你在 ShipStation 中設定的<code>驗證金鑰</code>，可讓 ShipStation 與你的商店通訊。"
+
+#: includes/data/data-settings.php:20
+msgid "Authentication Key"
+msgstr "驗證金鑰"
+
+#: includes/class-wc-shipstation-privacy.php:172
+msgid "ShipStation Order Data Erased."
+msgstr "ShipStation 訂單資料已清除。"
+
+#: includes/class-wc-shipstation-privacy.php:94
+msgid "ShipStation date shipped"
+msgstr "ShipStation 出貨日期"
+
+#: includes/class-wc-shipstation-privacy.php:90
+msgid "ShipStation tracking number"
+msgstr "ShipStation 追蹤號碼"
+
+#: includes/class-wc-shipstation-privacy.php:86
+msgid "ShipStation tracking provider"
+msgstr "ShipStation 追蹤供應商"
+
+#: includes/class-wc-shipstation-privacy.php:82
+msgid "Orders"
+msgstr "訂單"
+
+#. translators: 1: URL to documentation
+#: includes/class-wc-shipstation-privacy.php:59
+msgid "By using this extension, you may be storing personal data or sharing data with an external service. <a href=\"%s\" target=\"_blank\">Learn more about how this works, including what you may want to include in your privacy policy.</a>"
+msgstr "使用此延伸，可能會儲存你的個人資料或與外部服務分享資料。 <a href=\"%s\" target=\"_blank\">詳細瞭解其運作方式，包括你可能希望加入隱私權政策的內容。</a>"
+
+#: includes/class-wc-shipstation-privacy.php:26
+msgid "WooCommerce ShipStation Data"
+msgstr "WooCommerce ShipStation 資料"
+
+#: includes/class-wc-shipstation-privacy.php:24
+msgid "WooCommerce ShipStation Order Data"
+msgstr "WooCommerce ShipStation 訂單資料"
+
+#. translators: %1$s: ShipStation plugin settings URL, %2$s: ShipStation
+#. documentation URL
+#: includes/class-wc-shipstation-integration.php:588
+msgid "You can find other settings for this extension <a href=\"%1$s\">here</a> and view the documentation <a href=\"%2$s\">here</a>."
+msgstr "你可以在<a href=\"%1$s\">此處</a>找到此延伸的其他設定，並在<a href=\"%2$s\">此處</a>查看文件。"
+
+#. translators: %s: ShipStation URL
+#: includes/class-wc-shipstation-integration.php:556
+msgid "To begin printing shipping labels with ShipStation head over to <a class=\"shipstation-external-link\" href=\"%s\" target=\"_blank\">ShipStation.com</a> and log in or create a new account."
+msgstr "若要開始列印 ShipStation 郵寄標籤，請前往 <a class=\"shipstation-external-link\" href=\"%s\" target=\"_blank\">ShipStation.com</a>，並登入或建立一個新帳戶。"
+
+#: includes/class-wc-shipstation-integration.php:546
+msgid "ShipStation logo"
+msgstr "ShipStation 標誌"
+
+#: includes/class-wc-shipstation-integration.php:524
+msgid "Cheatin&#8217; huh?"
+msgstr "很抱歉，無法進行這項操作。"
+
+#: includes/class-wc-shipstation-integration.php:519
+msgid "Action failed. Please refresh the page and retry."
+msgstr "操作失敗。請重新整理頁面再試一次。"
+
+#: includes/class-wc-shipstation-integration.php:151
+msgid "ShipStation allows you to retrieve &amp; manage orders, then print labels &amp; packing slips with ease."
+msgstr "ShipStation 讓你擷取和管理訂單，然後輕鬆列印標籤和裝箱單。"
+
+#: includes/class-wc-shipstation-integration.php:150
+#: includes/class-wc-shipstation-privacy.php:22
+msgid "ShipStation"
+msgstr "ShipStation"
+
+#. translators: 1: query string
+#: includes/class-wc-shipstation-api.php:96
+msgid "Input params: %s"
+msgstr "輸入參數：%s"
+
+#: includes/class-wc-shipstation-api.php:83
+#: includes/class-wc-shipstation-api.php:100
+msgid "Invalid request"
+msgstr "無效的請求"
+
+#: includes/class-wc-shipstation-api.php:75
+msgid "Invalid authentication key"
+msgstr "驗證金鑰無效"
+
+#: includes/class-wc-shipstation-api.php:71
+msgid "Authentication key is required!"
+msgstr "需要驗證金鑰！"
+
+#. translators: 1) order ID 2) shipment status
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:347
+#: includes/api/rest/class-orders-controller.php:1609
+msgid "Updated order %1$s to status %2$s"
+msgstr "已將訂單狀態從 %1$s 更新為 %2$s"
+
+#. translators: 1: order id
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:245
+#: includes/api/rest/class-orders-controller.php:1506
+msgid "No items found - shipping entire order %d."
+msgstr "找不到物品 - 整份訂單出貨 %d。"
+
+#. translators: 1) carrier's name 2) shipped date, 3) tracking number
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:238
+#: includes/api/rest/class-orders-controller.php:1499
+msgid "Items shipped via %1$s on %2$s with tracking number %3$s (Shipstation)."
+msgstr "%1$s 在 %2$s 已經出貨的物品，追蹤號碼 %3$s (Shipstation)。"
+
+#. translators: 1) number of shipped items 2) total shipped items 3) order ID
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:222
+#: includes/api/rest/class-orders-controller.php:1484
+msgid "Shipped %1$d out of %2$d items in order %3$s"
+msgstr "訂單 %3$s 的 %1$d 項物品已經出貨，共 %2$d 項物品"
+
+#. translators: 1) shipped items 2) carrier's name 3) shipped date, 4) tracking
+#. number
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:206
+#: includes/api/rest/class-orders-controller.php:1468
+msgid "%1$s shipped via %2$s on %3$s with tracking number %4$s."
+msgstr "%2$s 在 %3$s 已將 %1$s 出貨，追蹤號碼 %4$s。"
+
+#. translators: 1: item name
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:188
+#: includes/api/rest/class-orders-controller.php:1452
+msgid "Item %s is not shippable product. Skipping."
+msgstr "物品 %s 是不可出貨產品。 正在跳過。"
+
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:175
+#: includes/api/rest/class-orders-controller.php:1367
+msgid "ShipNotify Item: "
+msgstr "ShipNotify 物品： "
+
+#. translators: 1: order id
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:166
+msgid "Invalid order ID: %s"
+msgstr "無效的訂單編號：%s"
+
+#. translators: 1: order id
+#: includes/api/requests/class-wc-shipstation-api-export.php:170
+#: includes/api/rest/class-orders-controller.php:447
+msgid "Order %s can not be found."
+msgstr "找不到訂單 %s。"
+
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:131
+msgid "ShipNotify XML: "
+msgstr "ShipNotify XML： "
+
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:124
+msgid "Missing SimpleXML extension for parsing ShipStation XML."
+msgstr "缺少解析 ShipStation XML 的 SimpleXML 延伸。"
+
+#: includes/api/requests/class-wc-shipstation-api-shipnotify.php:104
+msgid "Missing ShipNotify XML input."
+msgstr "缺少 ShipNotify XML 輸入。"
+
+#. translators: 1: field name
+#: includes/api/requests/class-wc-shipstation-api-request.php:50
+msgid "Missing required param: %s"
+msgstr "缺少必要的參數：%s"
+
+#. translators: 1: total count
+#: includes/api/requests/class-wc-shipstation-api-export.php:521
+msgid "Exported %s orders"
+msgstr "已匯出 %s 訂單"
+
+#: includes/api/requests/class-wc-shipstation-api-export.php:509
+#: includes/api/rest/class-orders-controller.php:455
+msgid "Order has been exported to Shipstation"
+msgstr "訂單已匯出到 Shipstation"
+
+#: includes/api/requests/class-wc-shipstation-api-export.php:480
+msgid "Total Discount"
+msgstr "總折扣"
+
+#. Author URI of the plugin
+#: woocommerce-shipstation.php
+msgid "https://woocommerce.com/"
+msgstr "https://woocommerce.com/"
+
+#. Author of the plugin
+#: woocommerce-shipstation.php
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#. Plugin URI of the plugin
+#: woocommerce-shipstation.php
+msgid "https://woocommerce.com/products/shipstation-integration/"
+msgstr "https://woocommerce.com/products/shipstation-integration/"

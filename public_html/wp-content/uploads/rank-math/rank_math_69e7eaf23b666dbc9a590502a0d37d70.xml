@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//jnbhealth.com/main-sitemap.xsl"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+		<name>Locations for JNB Pruvit Ketones Drink Shop</name>
+		<open>1</open>
+		<Folder>
+			<Placemark>
+				<name><![CDATA[JNB Pruvit Ketones Drink Shop]]></name>
+				<description><![CDATA[JNB Pruvit Ketones Drink Shop - Official shop for Pruvit Keto]]></description>
+				<address><![CDATA[]]></address>
+				<phoneNumber><![CDATA[]]></phoneNumber>
+				<atom:link href=""/>
+				<LookAt>
+					<altitude>0</altitude>
+					<range></range>
+					<tilt>0</tilt>
+				</LookAt>
+				<Point>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>

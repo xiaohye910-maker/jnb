@@ -1,0 +1,373 @@
+# Translation of Plugins - File Manager Pro &#8211; Filester - Stable (latest release) in Chinese (China)
+# This file is distributed under the same license as the Plugins - File Manager Pro &#8211; Filester - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-09-12 04:08:33+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Plugins - File Manager Pro &#8211; Filester - Stable (latest release)\n"
+
+#: includes/cross.php:244
+msgid "Could not fetch plugin information."
+msgstr "无法获取插件信息。"
+
+#: includes/cross.php:197
+msgid "You do not have permission to install plugins."
+msgstr "您没有安装插件的权限。"
+
+#: includes/Recommended/Recommended.php:462
+msgid "Update success"
+msgstr "更新成功"
+
+#: includes/Recommended/Recommended.php:438
+msgid "Install success"
+msgstr "安装成功"
+
+#: includes/Recommended/Recommended.php:356
+msgid "Activate success"
+msgstr "激活成功"
+
+#: includes/Recommended/Recommended.php:328
+#: includes/Recommended/Recommended.php:372
+#: includes/Recommended/Recommended.php:481
+msgid "Error."
+msgstr "错误。"
+
+#: includes/Recommended/Recommended.php:319
+#: includes/Recommended/Recommended.php:363
+#: includes/Recommended/Recommended.php:472
+msgid "Error exception."
+msgstr "错误异常。"
+
+#: includes/Recommended/Recommended.php:311
+msgid "Get data success"
+msgstr "获取数据成功"
+
+#: includes/Recommended/Recommended.php:294
+#: includes/Recommended/Recommended.php:342
+#: includes/Recommended/Recommended.php:390
+msgid "Nonce is invalid"
+msgstr "Nonce 无效"
+
+#: includes/Recommended/Recommended.php:155
+#: includes/Recommended/Recommended.php:245
+#: includes/Recommended/Recommended.php:552
+msgid "Recommended Plugins"
+msgstr "推荐的插件"
+
+#: includes/Recommended/views/content.php:246
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "此插件与您的 PHP 版本不兼容。"
+
+#: includes/Recommended/views/content.php:237
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr "此插件与您的 WordPress 版本不兼容。"
+
+#. translators: %s: URL to Update PHP page.
+#: includes/Recommended/views/content.php:231
+#: includes/Recommended/views/content.php:250
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">查阅如何更新 PHP</a>。"
+
+#. translators: %s: URL to WordPress Updates screen.
+#: includes/Recommended/views/content.php:225
+#: includes/Recommended/views/content.php:241
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">请更新 WordPress</a>。"
+
+#. translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page.
+#: includes/Recommended/views/content.php:217
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">请更新 WordPress</a>，并<a href=\"%2$s\">查阅如何更新 PHP</a>。"
+
+#: includes/Recommended/views/content.php:213
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "此插件与您的 WordPress 和 PHP 版本不兼容。"
+
+#: includes/Recommended/views/content.php:183
+msgctxt "plugin"
+msgid "Installed"
+msgstr "已安装"
+
+#: includes/Recommended/views/content.php:177
+msgctxt "plugin"
+msgid "Cannot Activate"
+msgstr "无法启用"
+
+#: includes/Recommended/views/content.php:149
+msgid "Activate"
+msgstr "启用"
+
+#. translators: %s: Plugin name.
+#: includes/Recommended/views/content.php:151
+msgctxt "plugin"
+msgid "Activate %s"
+msgstr "启用 %s"
+
+#: includes/Recommended/views/content.php:162
+msgid "Network Activate"
+msgstr "网络启用"
+
+#. translators: %s: Plugin name.
+#: includes/Recommended/views/content.php:164
+msgctxt "plugin"
+msgid "Network Activate %s"
+msgstr "网络启用 %s"
+
+#: includes/Recommended/views/content.php:144
+msgctxt "plugin"
+msgid "Activated"
+msgstr "已启用"
+
+#: includes/Recommended/views/content.php:127
+msgctxt "plugin"
+msgid "Cannot Update"
+msgstr "无法更新"
+
+#: includes/Recommended/views/content.php:110
+#: includes/Recommended/views/content.php:121
+msgid "Update Now"
+msgstr "立即更新"
+
+#. translators: %s: Plugin name and version.
+#: includes/Recommended/views/content.php:108
+#: includes/Recommended/views/content.php:119
+msgctxt "plugin"
+msgid "Update %s now"
+msgstr "现在更新 %s"
+
+#: includes/Recommended/views/content.php:91
+msgctxt "plugin"
+msgid "Cannot Install"
+msgstr "无法安装"
+
+#: includes/Recommended/views/content.php:77
+#: includes/Recommended/views/content.php:85
+msgid "Install Now"
+msgstr "立即安装"
+
+#. translators: %s: Plugin name and version.
+#: includes/Recommended/views/content.php:76
+#: includes/Recommended/views/content.php:84
+msgctxt "plugin"
+msgid "Install %s now"
+msgstr "立即安装 %s"
+
+#: includes/cross.php:125
+msgid "Recommend"
+msgstr "推荐"
+
+#: views/pages/html-filemanager-settings.php:163
+#: views/pages/html-filemanager-user-role-restrictions.php:203
+msgid "Save Changes"
+msgstr "保存更改"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:151
+msgid "Eg: If you want to set files url path access is <strong>wp-content</strong> folder. Just enter "
+msgstr "例如：如果你想设置文件 url 路径访问的是 <strong>wp-content</strong> 文件夹。只需输入 "
+
+#: views/pages/html-filemanager-user-role-restrictions.php:141
+msgid "Files URL for this User Role"
+msgstr "此用户角色的文件 URL"
+
+#: views/pages/html-filemanager-settings.php:79
+msgid "Files URL"
+msgstr "文件 URL"
+
+#: includes/File_manager/FileManager.php:98
+msgid "Already did"
+msgstr "已经做了"
+
+#: includes/File_manager/FileManager.php:97
+msgid "Later"
+msgstr "以后再说"
+
+#: includes/File_manager/FileManager.php:96
+msgid "Rate now"
+msgstr "立即评分"
+
+#: includes/File_manager/FileManager.php:93
+msgid "We will be forever grateful. Thank you in advance ;)"
+msgstr "我们将永远感激不尽。先感谢您 ;）"
+
+#: includes/File_manager/FileManager.php:90
+msgid "Thank you for choosing Filester. We hope you love it. Could you take a couple of seconds posting a nice review to share your happy experience?"
+msgstr "感谢您选择 Filester。我们希望您会喜欢它。您能否花几秒钟发布一条好评来分享您的快乐体验？"
+
+#: includes/File_manager/FileManager.php:88
+msgid "Give Filester a review"
+msgstr "给 Filester 一个评价"
+
+#. Plugin Name of the plugin
+#: ninja-file-manager.php
+msgid "Filester - File Manager Pro"
+msgstr "Filester - 文件管理器"
+
+#: views/pages/html-filemanager-settings.php:100
+msgid "0 means unlimited upload."
+msgstr "0表示无限上传。"
+
+#: views/pages/html-filemanager-settings.php:140
+msgid "After enable trash, after delete your files will go to trash folder."
+msgstr "启用回收站后，你删除的文件都将进入回收站文件夹。"
+
+#: views/pages/html-filemanager.php:19
+msgid "Dark Slim"
+msgstr "黑暗修身"
+
+#: views/pages/html-filemanager.php:18
+msgid "Default Elfinder"
+msgstr "默认的Elfinder"
+
+#: views/pages/html-filemanager-settings.php:68
+#: views/pages/html-filemanager-settings.php:85
+#: views/pages/html-filemanager-user-role-restrictions.php:130
+#: views/pages/html-filemanager-user-role-restrictions.php:148
+msgid "Default path is: <code>"
+msgstr "默认路径为：<code>"
+
+#: views/pages/html-filemanager-settings.php:99
+msgid "Default:"
+msgstr "默认："
+
+#: views/pages/html-filemanager-user-role-restrictions.php:106
+msgid "Disable command"
+msgstr "禁用命令"
+
+#: views/pages/html-filemanager-settings.php:131
+msgid "Enable Trash?"
+msgstr "启用回收站？"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:183
+msgid "Enter file extensions which user can be Uploaded"
+msgstr "输入用户可上传的文件扩展名"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:171
+msgid "Enter file extensions which you want to Lock"
+msgstr "输入您要锁定的文件扩展名"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:159
+msgid "Enter folder or file paths that you want to Hide"
+msgstr "输入要隐藏的文件夹或文件路径"
+
+#: views/pages/html-filemanager.php:8
+msgid "Filester - WordPress File Manager Pro"
+msgstr "Filester - WordPress文件管理器"
+
+#: views/pages/html-filemanager-settings.php:114
+msgid "Hide .htaccess?"
+msgstr "隐藏.htaccess？"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:55
+msgid "If User Role is"
+msgstr "如果用户角色为"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:124
+msgid "Insert Root Path"
+msgstr "插入根路径"
+
+#: views/pages/html-filemanager-settings.php:96
+msgid "MB"
+msgstr "MB"
+
+#: views/pages/html-filemanager.php:20
+msgid "Material"
+msgstr "材料"
+
+#: views/pages/html-filemanager.php:21
+msgid "Material Gray"
+msgstr "材料灰"
+
+#: views/pages/html-filemanager.php:22
+msgid "Material Light"
+msgstr "材质亮"
+
+#: views/pages/html-filemanager-settings.php:92
+msgid "Maximum Upload Size"
+msgstr "最大上传大小"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:177
+msgid "Multiple separated by vertical bar (|). Eg: .php | .png | .css"
+msgstr "多个以竖线（|）分隔。例如：.php | .png | .css"
+
+#. Author of the plugin
+#: ninja-file-manager.php
+msgid "Ninja Team"
+msgstr "Ninja 团队"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:84
+msgid "Nothing to choose"
+msgstr "未选择"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:91
+#: views/pages/html-filemanager-user-role-restrictions.php:97
+msgid "Please select a User Role at Setings tab to use this option."
+msgstr "请在“设置”标签上选择一个“用户角色”，才能使用此选项。"
+
+#: views/pages/html-filemanager-settings.php:62
+msgid "Root Path"
+msgstr "根路径"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:119
+msgid "Root Path for this User Role"
+msgstr "该用户角色的根路径"
+
+#: views/pages/html-filemanager-settings.php:31
+msgid "Select User Roles to access"
+msgstr "选择用户角色以访问"
+
+#: views/pages/html-filemanager-settings.php:107
+msgid "Select language"
+msgstr "选择语言"
+
+#: views/pages/html-filemanager.php:15
+msgid "Select theme:"
+msgstr "选择主题："
+
+#: views/pages/html-filemanager-settings.php:20
+msgid "Settings"
+msgstr "设置"
+
+#: views/pages/html-filemanager-settings.php:21
+msgid "User Role Restrictions"
+msgstr "用户角色限制"
+
+#: views/pages/html-filemanager-settings.php:125
+msgid "Will Hide .htaccess file (if exists) in file manager."
+msgstr "将在文件管理器中隐藏.htaccess文件（如果存在）。"
+
+#: views/pages/html-filemanager.php:23
+msgid "Windows 10"
+msgstr "Windows 10"
+
+#. Author URI of the plugin
+#: ninja-file-manager.php
+msgid "https://ninjateam.org"
+msgstr "https://ninjateam.org"
+
+#. Plugin URI of the plugin
+#: ninja-file-manager.php
+msgid "https://ninjateam.org/filester"
+msgstr "https://ninjateam.org/filester"
+
+#: views/pages/html-filemanager-settings.php:71
+#: views/pages/html-filemanager-user-role-restrictions.php:133
+msgid "Eg: If you want to set root path access is <strong>wp-content</strong> folder. Just enter "
+msgstr "例如：如果要设置根路径访问的是<strong>wp-content</strong>文件夹。只需输入 "
+
+#. Description of the plugin
+#: ninja-file-manager.php
+msgid "Made to help you focus on WordPress file management and avoid being distracted."
+msgstr "帮助您专注于 WordPress 文件管理并避免分心。"
+
+#: views/pages/html-filemanager-user-role-restrictions.php:165
+msgid "Multiple separated by vertical bar (|). Eg: themes/twentytwenty | themes/avada"
+msgstr "多个主题用竖线 (|) 分隔。例如：themes/twentytwenty | themes/avada"
+
+#: includes/File_manager/FileManager.php:167
+msgid "Filester"
+msgstr "Filester"

@@ -1,0 +1,1643 @@
+# Translation of Plugins - YITH WooCommerce Wishlist - Stable (latest release) in Chinese (China)
+# This file is distributed under the same license as the Plugins - YITH WooCommerce Wishlist - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-06-23 13:06:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Plugins - YITH WooCommerce Wishlist - Stable (latest release)\n"
+
+#: plugin-options/settings/wishlist_page-options.php:241
+msgid "My wishlist"
+msgstr "我的心愿单"
+
+#: plugin-options/lists-options.php:41
+msgid "Search list"
+msgstr "搜索列表"
+
+#: includes/class-yith-wcwl-admin.php:107
+msgid "Wishlist Page"
+msgstr "心愿单页面"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-wishlist.php:95
+msgctxt "Elementor control label"
+msgid "Wishlist ID"
+msgstr "心愿单ID"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-wishlist.php:45
+msgctxt "Elementor widget name"
+msgid "YITH Wishlist"
+msgstr "YITH的心愿单"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-add-to-wishlist.php:45
+msgctxt "Elementor widget name"
+msgid "YITH Wishlist Add button"
+msgstr "YITH心愿单添加按钮"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-wishlist.php:87
+msgctxt "Elementor section title"
+msgid "Wishlist"
+msgstr "心愿单"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-add-to-wishlist.php:138
+msgid "Product already in wishlist"
+msgstr "产品已在心愿单中"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-add-to-wishlist.php:148
+msgid "Product added to wishlist"
+msgstr "产品已添加到心愿单"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-add-to-wishlist.php:87
+msgctxt "Elementor section title"
+msgid "Product"
+msgstr "产品"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-wishlist.php:107
+msgctxt "Elementor section title"
+msgid "Pagination"
+msgstr "分页"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-wishlist.php:115
+msgctxt "Elementor control label"
+msgid "Paginate items"
+msgstr "分页项"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-add-to-wishlist.php:165
+msgctxt "Elementor control label"
+msgid "URL of the wishlist page"
+msgstr "心愿单页面的 URL"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-add-to-wishlist.php:95
+msgctxt "Elementor control label"
+msgid "Product ID"
+msgstr "产品ID"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-add-to-wishlist.php:135
+msgctxt "Elementor control label"
+msgid "\"Product already in wishlist\" label"
+msgstr "“产品已在愿望清单中”标签"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-add-to-wishlist.php:175
+msgctxt "Elementor control label"
+msgid "Icon for the button"
+msgstr "按钮的图标"
+
+#: includes/functions-yith-wcwl.php:535
+msgid "Custom"
+msgstr "自定义"
+
+#: plugin-fw/templates/panel/panel-header.php:27
+#: plugin-fw/templates/panel/v2/panel-header.php:22
+msgid ":) Thanks!"
+msgstr ":) 谢谢！"
+
+#: plugin-fw/templates/panel/panel-header.php:24
+#: plugin-fw/templates/panel/v2/panel-header.php:19
+msgid "to keep updating and improving the plugin. Please,"
+msgstr "请不断更新和完善插件。 "
+
+#: plugin-fw/templates/panel/panel-header.php:23
+#: plugin-fw/templates/panel/v2/panel-header.php:18
+msgid "We need your support"
+msgstr "我们需要您的支持"
+
+#: includes/class-yith-wcwl-ajax-handler.php:94
+#: templates/add-to-wishlist-remove.php:81
+msgid "View &rsaquo;"
+msgstr "查看&rsaquo;"
+
+#: templates/wishlist-view-mobile.php:154
+msgid "Price:"
+msgstr "价格："
+
+#: templates/wishlist-view-mobile.php:196
+msgid "Stock:"
+msgstr "库存："
+
+#: templates/wishlist-view-mobile.php:181
+msgid "Quantity:"
+msgstr "数量："
+
+#: includes/class-yith-wcwl-ajax-handler.php:95
+#: templates/add-to-wishlist-remove.php:69
+msgid "or"
+msgstr "或"
+
+#: plugin-options/settings/wishlist_page-options.php:724
+msgid "Choose colors for WhatsApp share button"
+msgstr "为WhatsApp分享按钮选择颜色"
+
+#: plugin-options/settings/wishlist_page-options.php:604
+msgid "Choose colors for Twitter share button"
+msgstr "为Twitter分享按钮选择颜色"
+
+#: templates/wishlist-view-footer-mobile.php:113
+#: templates/wishlist-view-footer.php:151
+msgid "Add all to cart"
+msgstr "全部添加到购物车"
+
+#: plugin-options/settings/wishlist_page-options.php:715
+msgid "Upload an icon you'd like to use for WhatsApp share button (suggested 32px x 32px)"
+msgstr "上传您要用于WhatsApp分享按钮的图标（建议32px x 32px）"
+
+#: plugin-options/settings/wishlist_page-options.php:595
+msgid "Upload an icon you'd like to use for Twitter share button (suggested 32px x 32px)"
+msgstr "上传您要用于Twitter分享按钮的图标（建议32px x 32px）"
+
+#: plugin-options/settings/wishlist_page-options.php:675
+msgid "Upload an icon you'd like to use for the Email share button (suggested 32px x 32px)"
+msgstr "上传您要用于“电子邮件分享”按钮的图标（建议32px x 32px）"
+
+#: plugin-options/settings/wishlist_page-options.php:635
+msgid "Upload an icon you'd like to use for Pinterest share button (suggested 32px x 32px)"
+msgstr "上传您要用于Pinterest分享按钮的图标（建议32px x 32px）"
+
+#: plugin-options/settings/wishlist_page-options.php:555
+msgid "Upload an icon you'd like to use for Facebook share button (suggested 32px x 32px)"
+msgstr "上传您要用于Facebook分享按钮的图标（建议32px x 32px）"
+
+#: templates/wishlist-view-footer-mobile.php:107
+#: templates/wishlist-view-footer.php:107
+msgid "Update"
+msgstr "更新"
+
+#: plugin-options/settings/wishlist_page-options.php:723
+msgid "WhatsApp share button style"
+msgstr "WhatsApp分享按钮样式"
+
+#: plugin-options/settings/wishlist_page-options.php:703
+msgid "WhatsApp share button icon"
+msgstr "WhatsApp分享按钮图标"
+
+#: plugin-options/settings/wishlist_page-options.php:714
+msgid "WhatsApp share button custom icon"
+msgstr "WhatsApp分享按钮自定义图标"
+
+#: templates/share.php:111
+msgid "Whatsapp"
+msgstr "Whatsapp"
+
+#: plugin-options/settings/wishlist_page-options.php:603
+msgid "Twitter share button style"
+msgstr "Twitter分享按钮样式"
+
+#: plugin-options/settings/wishlist_page-options.php:583
+msgid "Twitter share button icon"
+msgstr "Twitter分享按钮图标"
+
+#: plugin-options/settings/wishlist_page-options.php:594
+msgid "Twitter share button custom icon"
+msgstr "Twitter分享按钮自定义图标"
+
+#: templates/wishlist-view-footer-mobile.php:99
+#: templates/wishlist-view-footer.php:99
+msgid "Apply"
+msgstr "应用"
+
+#: plugin-options/settings/wishlist_page-options.php:518
+msgid "Share button text color"
+msgstr "分享按钮文字颜色"
+
+#: plugin-options/settings/wishlist_page-options.php:704
+msgid "Select an icon for the WhatsApp share button"
+msgstr "选择WhatsApp分享按钮的图标"
+
+#: plugin-options/settings/wishlist_page-options.php:584
+msgid "Select an icon for the Twitter share button"
+msgstr "选择Twitter分享按钮的图标"
+
+#: plugin-options/settings/wishlist_page-options.php:624
+msgid "Select an icon for the Pinterest share button"
+msgstr "选择Pinterest分享按钮的图标"
+
+#: plugin-options/settings/wishlist_page-options.php:544
+msgid "Select an icon for the Facebook share button"
+msgstr "选择Facebook分享按钮的图标"
+
+#: plugin-options/settings/wishlist_page-options.php:664
+msgid "Select an icon for the Email share button"
+msgstr "选择电子邮件分享按钮的图标"
+
+#: templates/wishlist-view-footer-mobile.php:73
+#: templates/wishlist-view-footer.php:73
+msgid "Remove from wishlist"
+msgstr "从心愿单中删除"
+
+#: templates/wishlist-view.php:143
+msgid "Quantity"
+msgstr "数量"
+
+#: templates/wishlist-view-mobile.php:263 templates/wishlist-view.php:575
+msgid "Move to another list &rsaquo;"
+msgstr "移至另一个列表 &rsaquo;"
+
+#: templates/wishlist-view.php:206
+msgid "Arrange"
+msgstr "安排"
+
+#. translators: 1. Wishlist formatted name.
+#: templates/wishlist-view-footer-mobile.php:93
+#: templates/wishlist-view-footer.php:93
+msgid "Move to %s"
+msgstr "移至 %s"
+
+#: templates/wishlist-view-footer-mobile.php:55
+#: templates/wishlist-view-footer.php:55
+msgid "Apply this action to all the selected items:"
+msgstr "将此操作应用于所有选定的项目："
+
+#: plugin-options/settings/wishlist_page-options.php:684
+msgid "Choose colors for the Email share button"
+msgstr "选择电子邮件分享按钮的颜色"
+
+#: plugin-options/settings/wishlist_page-options.php:674
+msgid "Email share button custom icon"
+msgstr "电子邮件分享按钮自定义图标"
+
+#: plugin-options/settings/wishlist_page-options.php:663
+msgid "Email share button icon"
+msgstr "电子邮件分享按钮图标"
+
+#: plugin-options/settings/wishlist_page-options.php:644
+msgid "Choose colors for Pinterest share button"
+msgstr "选择Pinterest分享按钮的颜色"
+
+#: plugin-options/settings/wishlist_page-options.php:643
+msgid "Pinterest share button style"
+msgstr "Pinterest分享按钮的样式"
+
+#: plugin-options/settings/wishlist_page-options.php:634
+msgid "Pinterest share button custom icon"
+msgstr "Pinterest分享按钮的自定义图标"
+
+#: plugin-options/settings/wishlist_page-options.php:623
+msgid "Pinterest share button icon"
+msgstr "Pinterest分享按钮图标"
+
+#: plugin-options/settings/wishlist_page-options.php:564
+msgid "Choose colors for Facebook share button"
+msgstr "选择Facebook分享按钮的颜色"
+
+#: plugin-options/settings/wishlist_page-options.php:563
+msgid "Facebook share button style"
+msgstr "Facebook分享按钮样式"
+
+#: plugin-options/settings/wishlist_page-options.php:554
+msgid "Facebook share button custom icon"
+msgstr "Facebook分享按钮自定义图标"
+
+#: plugin-options/settings/wishlist_page-options.php:519
+msgid "Choose colors for share buttons text"
+msgstr "选择分享按钮文本的颜色"
+
+#: plugin-options/settings/wishlist_page-options.php:506
+msgid "Choose the color for all sections with background<br/><small>This color will be used as background for the wishlist table heading and footer (when set to \"Traditional\" layout), and for various form across wishlist views</small>"
+msgstr "为所有具有背景的部分选择颜色<br/> <small>该颜色将用作心愿单表的页眉和页脚的背景色（当设置为“传统”布局时），以及用于心愿单视图的各种形式</small>"
+
+#: plugin-options/settings/wishlist_page-options.php:543
+msgid "Facebook share button icon"
+msgstr "Facebook分享按钮图标"
+
+#: plugin-options/settings/wishlist_page-options.php:683
+msgid "Email share button style"
+msgstr "电子邮件分享按钮样式"
+
+#: plugin-options/settings/wishlist_page-options.php:476
+msgid "Wishlist table style"
+msgstr "心愿单样式"
+
+#: plugin-options/settings/wishlist_page-options.php:505
+msgid "Highlight color"
+msgstr "高亮颜色"
+
+#: plugin-options/settings/wishlist_page-options.php:427
+msgid "Secondary button style"
+msgstr "次要按钮样式"
+
+#: plugin-options/settings/wishlist_page-options.php:477
+msgid "Choose the colors for the wishlist table (when set to \"Traditional\" layout)"
+msgstr "选择心愿单表的颜色（设置为“传统”布局时）"
+
+#: plugin-options/settings/wishlist_page-options.php:433
+#: plugin-options/settings/wishlist_page-options.php:451
+msgid "Choose colors of the secondary button<br/><small>This style will be applied to the buttons that allow showing and hiding the Edit title form on Wishlist view and \"Create new Wishlist\" button on Manage view</small>"
+msgstr "选择辅助按钮的颜色<br/> <small>此样式将应用于允许显示和隐藏“心愿单”视图上的“编辑标题”表单和“管理”视图上的“创建新的心愿单”按钮的按钮</small>"
+
+#: plugin-options/settings/wishlist_page-options.php:402
+msgid "Choose colors for the primary button on hover state<br/><small>This style will be applied to \"Edit title\" button on Wishlist view, \"Submit Changes\" button on Manage view and \"Search wishlist\" button on Search view</small>"
+msgstr "为悬停状态下的主按钮选择颜色<br/> <small>此样式将应用于“心愿单”视图上的“编辑标题”按钮，“管理”视图上的“提交更改”按钮和“搜索”视图上的“搜索心愿”按钮</small>"
+
+#: plugin-options/settings/wishlist_page-options.php:384
+msgid "Choose colors for the primary button<br/><small>This style will be applied to \"Edit title\" button on Wishlist view, \"Submit Changes\" button on Manage view and \"Search wishlist\" button on Search view</small>"
+msgstr "为主按钮选择颜色<br/><small>此样式将应用于心愿单视图上的“编辑标题”按钮，管理视图上的“提交更改”按钮和搜索视图上的“搜索心愿单”按钮</small>"
+
+#: plugin-options/settings/wishlist_page-options.php:137
+msgid "Share wishlist"
+msgstr "分享心愿单"
+
+#: plugin-options/settings/wishlist_page-options.php:247
+msgid "Enter a text for the \"Add to cart\" button"
+msgstr "输入“添加到购物车”按钮的文本"
+
+#: plugin-options/settings/add_to_wishlist-options.php:134
+msgid "Enter a text for \"Add to wishlist\" button"
+msgstr "输入“添加到心愿单”按钮的文本"
+
+#: plugin-options/settings/wishlist_page-options.php:239
+msgid "Enter a name for the default wishlist. This is the wishlist that will be automatically generated for all users if they do not create any custom one"
+msgstr "输入默认心愿单的名称。 如果所有用户未创建任何自定义列表，此列表将自动为所有用户生成"
+
+#: plugin-options/settings/wishlist_page-options.php:84
+msgid "Date on which the product was added to the wishlist"
+msgstr "产品添加到心愿单的日期"
+
+#: plugin-options/settings/wishlist_page-options.php:267
+msgid "Choose whether to show a textual \"Add to cart\" link or a button"
+msgstr "选择显示文字“添加到购物车”链接还是按钮"
+
+#: plugin-options/settings/wishlist_page-options.php:49
+msgid "Wishlist Detail Page"
+msgstr "心愿单详情页面"
+
+#: plugin-options/settings/wishlist_page-options.php:370
+msgid "Upload an icon you'd like to use for the \"Add to cart\" button (suggested 32px x 32px)"
+msgstr "上传您要用于“添加到购物车”按钮的图标（建议32px x 32px）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:274
+#: plugin-options/settings/add_to_wishlist-options.php:307
+msgid "Upload an icon you'd like to use for \"Add to wishlist\" button (suggested 32px x 32px)"
+msgstr "上传您要用于“添加到心愿单”按钮的图标（建议32px x 32px）"
+
+#: plugin-options/settings/wishlist_page-options.php:201
+msgid "Wishlist title used for sharing (only used on Twitter and Pinterest)"
+msgstr "用于分享的心愿单标题（仅在Twitter和Pinterest上使用）"
+
+#: plugin-options/settings/wishlist_page-options.php:210
+msgid "Type the message you want to publish when you share your wishlist on Twitter and Pinterest"
+msgstr "在Twitter和Pinterest上分享心愿单时，键入要发布的消息"
+
+#: plugin-options/settings/add_to_wishlist-options.php:181
+#: plugin-options/settings/wishlist_page-options.php:270
+msgid "Textual (anchor)"
+msgstr "文字（锚点）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:220
+#: plugin-options/settings/wishlist_page-options.php:311
+#: plugin-options/settings/wishlist_page-options.php:409
+#: plugin-options/settings/wishlist_page-options.php:458
+msgid "Text Hover"
+msgstr "文字（悬停）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:126
+#: plugin-options/settings/wishlist_page-options.php:231
+msgid "Text customization"
+msgstr "文字自定义"
+
+#: plugin-options/settings/wishlist_page-options.php:66
+msgid "Product price"
+msgstr "产品价格"
+
+#: plugin-options/settings/wishlist_page-options.php:280
+msgid "\"Add to cart\" button style"
+msgstr "\"添加到购物车\"按钮样式"
+
+#: plugin-options/settings/wishlist_page-options.php:266
+msgid "Style of \"Add to cart\""
+msgstr "\"添加到购物车\"的样式"
+
+#: plugin-options/settings/wishlist_page-options.php:259
+msgid "Style & color customization"
+msgstr "样式和颜色自定义"
+
+#: plugin-options/settings/wishlist_page-options.php:93
+msgid "Add to cart option for each product"
+msgstr "为每个产品添加购物车选项"
+
+#: plugin-options/settings/add_to_wishlist-options.php:306
+msgid "\"Added to wishlist\" custom icon"
+msgstr "\"添加到心愿单\"自定义图标"
+
+#: plugin-options/settings/wishlist_page-options.php:369
+msgid "\"Add to cart\" custom icon"
+msgstr "\"添加到购物车\"自定义图标"
+
+#: plugin-options/settings/add_to_wishlist-options.php:170
+msgid "Style & Color customization"
+msgstr "样式和颜色自​​定义"
+
+#: plugin-options/settings/wishlist_page-options.php:200
+msgid "Sharing title"
+msgstr "分享标题"
+
+#: plugin-options/settings/wishlist_page-options.php:146
+#: plugin-options/settings/wishlist_page-options.php:155
+#: plugin-options/settings/wishlist_page-options.php:164
+#: plugin-options/settings/wishlist_page-options.php:173
+#: plugin-options/settings/wishlist_page-options.php:182
+msgid "Share on social media"
+msgstr "通过社交媒体分享"
+
+#: plugin-options/settings/wishlist_page-options.php:330
+msgid "Set the radius for the \"Add to cart\" button"
+msgstr "设置“添加到购物车”按钮的圆角"
+
+#: plugin-options/settings/wishlist_page-options.php:345
+msgid "Select an icon for the \"Add to cart\" button (optional)"
+msgstr "选择“添加到购物车”按钮的图标（可选）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:302
+msgid "Same used for Add to wishlist"
+msgstr "也用于“添加到心愿单”"
+
+#: plugin-options/settings/wishlist_page-options.php:120
+msgid "Redirect users to the cart page when they add a product to the cart from the wishlist page"
+msgstr "当用户从心愿单页面添加到购物车中时，将用户重定向到购物车页面"
+
+#: plugin-options/settings/wishlist_page-options.php:57
+msgid "Product variations selected by the user (example: size or color)"
+msgstr "用户选择的产品变量（例如：尺寸或颜色）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:177
+msgid "Style of \"Add to wishlist\""
+msgstr "“添加到心愿单”的样式"
+
+#: plugin-options/settings/add_to_wishlist-options.php:287
+msgid "Select an icon for the \"Added to wishlist\" button (optional)"
+msgstr "选择“已添加到心愿单”按钮的图标（可选）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:254
+msgid "Select an icon for the \"Add to wishlist\" button (optional)"
+msgstr "选择“添加到心愿单”按钮的图标（可选）"
+
+#: plugin-options/settings/wishlist_page-options.php:75
+msgid "Product stock (show if the product is available or not)"
+msgstr "产品库存（显示产品是否可用）"
+
+#: plugin-options/settings/wishlist_page-options.php:378
+msgid "Primary button style"
+msgstr "主要按钮样式"
+
+#: plugin-options/settings/wishlist_page-options.php:36
+msgid "Pick a page as the main Wishlist page; make sure you add the <span class=\"code\"><code>[yith_wcwl_wishlist]</code></span> shortcode into the page content"
+msgstr "选择一个页面作为“心愿单”主页面； 确保将简码 <span class=\"code\"><code>[yith_wcwl_wishlist]</code></span> 添加到页面内容中"
+
+#: plugin-options/settings/wishlist_page-options.php:219
+msgid "It will be used to pin the wishlist on Pinterest."
+msgstr "它将用于将心愿单固定在Pinterest上。"
+
+#: plugin-options/settings/wishlist_page-options.php:56
+#: plugin-options/settings/wishlist_page-options.php:65
+#: plugin-options/settings/wishlist_page-options.php:74
+#: plugin-options/settings/wishlist_page-options.php:83
+#: plugin-options/settings/wishlist_page-options.php:92
+#: plugin-options/settings/wishlist_page-options.php:101
+#: plugin-options/settings/wishlist_page-options.php:110
+msgid "In wishlist table show"
+msgstr "在心愿单中显示"
+
+#: plugin-options/settings/wishlist_page-options.php:102
+msgid "Icon to remove the product from the wishlist - to the left of the product"
+msgstr "“从心愿单中删除产品”的图标-产品左侧"
+
+#: plugin-options/settings/add_to_wishlist-options.php:142
+msgid "Enter the text of the message displayed when the user adds a product to the wishlist"
+msgstr "输入用户将产品添加到心愿单时显示的消息文本"
+
+#: plugin-options/settings/add_to_wishlist-options.php:158
+msgid "Enter the text for the message displayed when the user views a product that is already in the wishlist"
+msgstr "输入当用户查看已在心愿单中的产品时显示的消息的文本"
+
+#: plugin-options/settings/add_to_wishlist-options.php:320
+msgid "Enter custom CSS to be applied to Wishlist elements (optional)"
+msgstr "输入要应用于“心愿单”元素的自定义CSS（可选）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:150
+msgid "Enter a text for the \"Browse wishlist\" link on the product page"
+msgstr "输入产品页面上“浏览心愿单”链接的文本"
+
+#: plugin-options/settings/wishlist_page-options.php:138
+msgid "Enable this option to let users share their wishlist on social media"
+msgstr "启用此选项可让用户在社交媒体上分享其心愿单"
+
+#: plugin-options/settings/wishlist_page-options.php:286
+msgid "Choose the colors for the \"Add to cart\" button"
+msgstr "选择“添加到购物车”按钮的颜色"
+
+#: plugin-options/settings/add_to_wishlist-options.php:239
+msgid "Choose radius for the \"Add to wishlist\" button"
+msgstr "选择“添加到心愿单”按钮的圆角"
+
+#: plugin-options/settings/add_to_wishlist-options.php:178
+msgid "Choose if you want to show a textual \"Add to wishlist\" link or a button"
+msgstr "选择是否要显示文本“添加到心愿单”链接或按钮"
+
+#: plugin-options/settings/wishlist_page-options.php:304
+msgid "Choose colors for the \"Add to cart\" button on hover state"
+msgstr "选择“添加到购物车”按钮在悬停状态下颜色"
+
+#: plugin-options/settings/add_to_wishlist-options.php:182
+#: plugin-options/settings/wishlist_page-options.php:271
+msgid "Button with theme style"
+msgstr "具有主题样式的按钮"
+
+#: plugin-options/settings/add_to_wishlist-options.php:183
+#: plugin-options/settings/wishlist_page-options.php:272
+msgid "Button with custom style"
+msgstr "具有自定义样式的按钮"
+
+#: plugin-options/settings/add_to_wishlist-options.php:273
+msgid "\"Add to wishlist\" custom icon"
+msgstr "“添加到心愿单”自定义图标"
+
+#: plugin-options/settings/add_to_wishlist-options.php:191
+msgid "\"Add to wishlist\" button style"
+msgstr "“添加到心愿单”按钮样式"
+
+#: plugin-options/settings/add_to_wishlist-options.php:106
+msgid "Choose where to show \"Add to wishlist\" button or link on the product page. <span class=\"addon\">Copy this shortcode <span class=\"code\"><code>[yith_wcwl_add_to_wishlist]</code></span> and paste it where you want to show the \"Add to wishlist\" link or button</span>"
+msgstr "选择在产品页面上显示“添加到心愿单”按钮或链接的位置。 <span class=\"addon\">复制此简码 <span class=\"code\"><code>[yith_wcwl_add_to_wishlist]</code></span>并将其粘贴到要显示“添加到心愿单”链接或按钮的位置</span>"
+
+#: plugin-options/settings/wishlist_page-options.php:111
+msgid "Button to remove the product from the wishlist - to the right of the product"
+msgstr "“从心愿单中删除产品”的按钮-产品右侧"
+
+#: plugin-options/settings/add_to_wishlist-options.php:238
+#: plugin-options/settings/wishlist_page-options.php:329
+msgid "Border radius"
+msgstr "边框圆角"
+
+#: plugin-options/settings/add_to_wishlist-options.php:83
+msgid "After \"Add to cart\" button"
+msgstr "在“添加到购物车”按钮之后"
+
+#: plugin-options/settings/add_to_wishlist-options.php:98
+msgid "Product page settings"
+msgstr "产品页面设置"
+
+#: plugin-options/settings/add_to_wishlist-options.php:105
+msgid "Position of \"Add to wishlist\" on product page"
+msgstr "“添加到心愿单”在产品页面的位置"
+
+#: plugin-options/settings/add_to_wishlist-options.php:81
+msgid "On top of the image"
+msgstr "在图像上方"
+
+#: plugin-options/settings/add_to_wishlist-options.php:82
+msgid "Before \"Add to cart\" button"
+msgstr "在“添加到购物车”按钮前"
+
+#: plugin-options/settings/add_to_wishlist-options.php:74
+msgid "Choose where to show \"Add to wishlist\" button or link in WooCommerce products' loop. <span class=\"addon\">Copy this shortcode <span class=\"code\"><code>[yith_wcwl_add_to_wishlist]</code></span> and paste it where you want to show the \"Add to wishlist\" link or button</span>"
+msgstr "选择在何处显示“添加到心愿单”按钮或WooCommerce产品循环中的链接。<span class=\"addon\">复制此简码 <span class=\"code\"><code>[yith_wcwl_add_to_wishlist]</code></span> 并将其粘贴到要显示“添加到心愿单”链接或按钮的位置</span>"
+
+#: plugin-options/settings/add_to_wishlist-options.php:65
+msgid "Enable the \"Add to wishlist\" feature in WooCommerce products' loop"
+msgstr "启用WooCommerce产品循环中的“添加到心愿单”功能"
+
+#: plugin-options/settings/add_to_wishlist-options.php:42
+msgid "Show \"View wishlist\" link"
+msgstr "显示“查看心愿单”链接"
+
+#: includes/class-yith-wcwl-privacy.php:272
+msgid "Wishlist URL"
+msgstr "心愿单网址"
+
+#: includes/class-yith-wcwl-shortcode.php:63
+msgid "URL of the wishlist page (leave empty to use the default settings)"
+msgstr "心愿单页面的网址（留空以使用默认设置）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:43
+msgid "Show \"Remove from list\" link"
+msgstr "显示“从列表中删除”链接"
+
+#: plugin-options/settings/add_to_wishlist-options.php:37
+msgid "Choose the look of the Wishlist button when the product has already been added to a wishlist"
+msgstr "将产品添加到心愿单后，选择“心愿单”按钮的外观"
+
+#: includes/class-yith-wcwl-shortcode.php:556
+msgid "Share via email"
+msgstr "通过电子邮件分享"
+
+#: includes/class-yith-wcwl-shortcode.php:754
+msgid "Remove from list"
+msgstr "从清单中删除"
+
+#: plugin-options/settings/add_to_wishlist-options.php:64
+msgid "Show \"Add to wishlist\" in loop"
+msgstr "循环显示“添加到心愿单”"
+
+#: plugin-options/settings/add_to_wishlist-options.php:73
+msgid "Position of \"Add to wishlist\" in loop"
+msgstr "“添加到心愿单”循环位置"
+
+#: includes/class-yith-wcwl-form-handler.php:193
+msgid "Please, make sure to enter a valid title"
+msgstr "请务必输入有效的标题"
+
+#: plugin-options/settings/add_to_wishlist-options.php:57
+msgid "Loop settings"
+msgstr "循环设置"
+
+#: plugin-options/settings/add_to_wishlist-options.php:59
+msgid "Loop options will be visible on Shop page, category pages, product shortcodes, products sliders, and all the other places where the WooCommerce products' loop is used"
+msgstr "循环选项将在“商店”页面，类别页面，产品简码，产品滑块以及使用WooCommerce产品循环的所有其他位置上可见"
+
+#: plugin-options/settings/general-options.php:41
+msgid "Load any cacheable wishlist item via AJAX"
+msgstr "通过AJAX加载任何可缓存的心愿单项目"
+
+#: includes/data-stores/class-yith-wcwl-wishlist-data-store.php:252
+#: includes/data-stores/class-yith-wcwl-wishlist-data-store.php:274
+msgid "Invalid wishlist."
+msgstr "无效心愿单。"
+
+#: includes/data-stores/class-yith-wcwl-wishlist-item-data-store.php:210
+msgid "Invalid wishlist item."
+msgstr "无效的心愿单项目。"
+
+#: plugin-options/settings/general-options.php:40
+msgid "Enable AJAX loading"
+msgstr "启用AJAX加载"
+
+#: includes/class-yith-wcwl-shortcode.php:68
+msgid "Button label (leave empty to use the default settings)"
+msgstr "按钮标签（留空以使用默认设置）"
+
+#: includes/class-yith-wcwl-shortcode.php:93
+msgid "Additional CSS classes for the button (leave empty to use the default settings)"
+msgstr "按钮的其他CSS类（保留为空以使用默认设置）"
+
+#: includes/class-yith-wcwl-shortcode.php:73
+msgid "\"Browse wishlist\" label (leave empty to use the default settings)"
+msgstr "“浏览心愿单”标签（留空以使用默认设置）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:36
+msgid "After product is added to wishlist"
+msgstr "产品添加到心愿单后"
+
+#: includes/class-yith-wcwl.php:233
+msgid "The item cannot be added to this wishlist"
+msgstr "该项目无法添加到该心愿单"
+
+#: includes/class-yith-wcwl-frontend.php:795
+msgid "We are sorry, but this feature is available only if cookies on your browser are enabled."
+msgstr "抱歉，此功能仅在浏览器上启用Cookie时可用。"
+
+#: includes/functions-yith-wcwl.php:313
+msgid "to add this item in wishlist"
+msgstr "将此项目添加到心愿单"
+
+#: includes/functions-yith-wcwl.php:312
+msgid "You're the first"
+msgstr "你是第一个"
+
+#: includes/class-yith-wcwl-admin.php:244
+msgid "Allows your customers to create and share lists of products that they want to purchase on your e-commerce."
+msgstr "允许您的客户创建和分享他们想要在您的电子商店上购买的产品的列表。"
+
+#. translators: 1. Number of users.
+#: includes/functions-yith-wcwl.php:309
+msgid "%d user"
+msgid_plural "%d users"
+msgstr[0] "%d 用户"
+
+#: includes/class-yith-wcwl-frontend.php:805
+msgid "Product added to cart successfully"
+msgstr "产品添加到购物车成功"
+
+#. translators: 1. % of reduction/increase in price.
+#: includes/class-yith-wcwl-wishlist-item.php:478
+msgctxt "Part of the template that shows price variation since addition to list; placeholder will be replaced with a percentage"
+msgid "Price is %1$s%%"
+msgstr "价格为 %1$s%%"
+
+#: includes/functions-yith-wcwl.php:581
+msgid "Only you can see this list"
+msgstr "只有您可以看到此列表"
+
+#: includes/functions-yith-wcwl.php:571
+msgid "Only people with a link to this list can see it"
+msgstr "只有链接到此列表的人才能看到它"
+
+#. translators: 1. Count of users when many, or "another" when only one.
+#: includes/functions-yith-wcwl.php:318
+msgid "have this item in wishlist"
+msgstr "在心愿单中有此项目"
+
+#. translators: 1. Number of users.
+#: includes/functions-yith-wcwl.php:310
+msgid "has this item in wishlist"
+msgid_plural "have this item in wishlist"
+msgstr[0] "在心愿单中有此项目"
+
+#: includes/functions-yith-wcwl.php:591
+msgid "Anyone can search for and see this list"
+msgstr "任何人都可以搜索并看到此列表"
+
+#. translators: 2: original product price.
+#: includes/class-yith-wcwl-wishlist-item.php:480
+msgctxt "Part of the template that shows price variation since addition to list; placeholder will be replaced with a price"
+msgid "(Was %2$s when added  in list)"
+msgstr "（添加到列表为 %2$s ）"
+
+#. translators: 1. Count of users when many, or "another" when only one.
+#: includes/functions-yith-wcwl.php:317
+msgid "You and %s user"
+msgid_plural "You and %d users"
+msgstr[0] "你和 %d 用户"
+
+#: plugin-fw/templates/sysinfo/tabs/main.php:26
+msgid "Site URL"
+msgstr "站点网址"
+
+#: plugin-fw/templates/sysinfo/tabs/main.php:35
+msgid "Output IP Address"
+msgstr "输出IP地址"
+
+#: plugin-fw/includes/class-yith-system-status.php:487
+msgid "N/A"
+msgstr "不适用"
+
+#: templates/share.php:120
+msgid "this wishlist link and share it anywhere)"
+msgstr "此心愿单链接并在任何地方共享）"
+
+#: plugin-options/settings/wishlist_page-options.php:192
+msgid "Show \"Share URL\" field on wishlist page"
+msgstr "在心愿单页面上显示“分享网址”字段"
+
+#: plugin-options/settings/wishlist_page-options.php:191
+msgid "Share by URL"
+msgstr "按网址分享"
+
+#: plugin-fw/includes/class-yith-system-status.php:117
+msgid "Iconv Module"
+msgstr "Iconv模块"
+
+#: templates/share.php:120
+msgid "copy"
+msgstr "复制"
+
+#: templates/share.php:120
+msgid "(Now"
+msgstr "（现在"
+
+#. translators: 1. user display name; 2. user ID; 3. user email.
+#: plugin-fw/templates/fields/ajax-customers.php:68
+#: plugin-fw/templates/fields/ajax-customers.php:79
+msgid "%1$s (#%2$s &ndash; %3$s)"
+msgstr "%1$s (#%2$s &ndash; %3$s)"
+
+#: plugin-fw/templates/sysinfo/system-information-panel.php:28
+msgid "YITH System Information"
+msgstr "YITH系统信息"
+
+#: plugin-fw/includes/class-yith-system-status.php:107
+msgid "WordPress Version"
+msgstr "WordPress版本"
+
+#: plugin-fw/includes/class-yith-system-status.php:112
+msgid "WordPress Cron"
+msgstr "WordPress Cron"
+
+#: plugin-fw/includes/class-yith-system-status.php:108
+msgid "WooCommerce Version"
+msgstr "WooCommerce版本"
+
+#: plugin-fw/includes/class-yith-system-status.php:185
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: plugin-fw/includes/class-yith-system-status.php:332
+msgid "Warning!"
+msgstr "警告！"
+
+#: plugin-fw/includes/class-yith-system-status.php:119
+msgid "URL FOpen"
+msgstr "网址打开"
+
+#: plugin-fw/includes/class-yith-system-status.php:542
+msgid "Update it to the latest version in order to benefit of all new features and security updates."
+msgstr "为了使用所有新功能和安全更新，请将其更新到最新版本。"
+
+#: plugin-fw/includes/class-yith-system-status.php:111
+msgid "TLS Version"
+msgstr "TLS版本"
+
+#: plugin-fw/includes/class-yith-system-status.php:136
+#: plugin-fw/includes/class-yith-system-status.php:137
+#: plugin-fw/templates/sysinfo/system-information-panel.php:11
+msgid "System Status"
+msgstr "系统状况"
+
+#: plugin-fw/includes/class-yith-system-status.php:113
+msgid "SimpleXML"
+msgstr "SimpleXML"
+
+#: plugin-fw/includes/class-yith-system-status.php:110
+msgid "PHP Version"
+msgstr "PHP版本"
+
+#: plugin-fw/includes/class-yith-system-status.php:118
+msgid "OPCache Save Comments"
+msgstr "OPCache保存评论"
+
+#: plugin-fw/includes/class-yith-system-status.php:114
+msgid "MultiByte String"
+msgstr "多字节字符串"
+
+#: plugin-fw/includes/class-yith-system-status.php:115
+msgid "ImageMagick Version"
+msgstr "ImageMagick版本"
+
+#: plugin-fw/includes/class-yith-system-status.php:116
+msgid "GD Library"
+msgstr "GD库"
+
+#. translators: %s recommended memory amount
+#: plugin-fw/includes/class-yith-system-status.php:588
+msgid "For optimal functioning of our plugins, we suggest setting at least %s of available memory"
+msgstr "为了使我们的插件发挥最佳功能，建议您至少设置%s的可用内存"
+
+#: plugin-fw/includes/class-yith-system-status.php:482
+msgid "Enabled"
+msgstr "已启用"
+
+#: plugin-fw/includes/class-yith-system-status.php:482
+msgid "Disabled"
+msgstr "未启用"
+
+#: plugin-fw/includes/class-yith-system-status.php:546
+#: plugin-fw/includes/class-yith-system-status.php:552
+msgid "Contact your hosting company in order to update it."
+msgstr "请与您的托管公司联系以进行更新。"
+
+#: plugin-fw/includes/class-yith-system-status.php:565
+msgid "Contact your hosting company in order to enable it."
+msgstr "请与您的托管公司联系以启用它。"
+
+#: plugin-fw/includes/class-yith-system-status.php:109
+msgid "Available Memory"
+msgstr "有效内存"
+
+#: plugin-fw/templates/fields/select-buttons.php:20
+msgid "Remove All"
+msgstr "移除所有"
+
+#: plugin-fw/templates/fields/date-format.php:65
+msgid "Custom:"
+msgstr "自定义："
+
+#: plugin-fw/templates/fields/select-buttons.php:19
+msgid "Add All"
+msgstr "都加进去"
+
+#: plugin-fw/includes/class-yith-dashboard.php:35
+msgid "YITH Latest Updates"
+msgstr "YITH最新更新"
+
+#: templates/share.php:110
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: plugin-fw/includes/class-yith-dashboard.php:96
+msgctxt "Plugin FW"
+msgid "View Changelog"
+msgstr "查看变更日志"
+
+#: includes/class-yith-wcwl-shortcode.php:579
+#: plugin-options/settings/wishlist_page-options.php:183
+msgid "Share on WhatsApp"
+msgstr "通过WhatsApp分享"
+
+#: plugin-fw/includes/class-yith-dashboard.php:56
+msgid "RSS Error:"
+msgstr "RSS错误："
+
+#: plugin-fw/includes/class-yith-dashboard.php:97
+msgctxt "Plugin FW"
+msgid "Latest update released on"
+msgstr "最新更新发布于"
+
+#: plugin-fw/includes/class-yith-dashboard.php:36
+msgid "Latest news from YITH Blog"
+msgstr "YITH博客的最新消息"
+
+#: plugin-fw/includes/class-yith-dashboard.php:137
+msgctxt "Button label"
+msgid "Close"
+msgstr "关"
+
+#: plugin-fw/includes/class-yith-dashboard.php:63
+msgid "An error has occurred, which probably means the feed is down. Try again later."
+msgstr "发生错误，这可能意味着Feed已关闭。稍后再试。"
+
+#: includes/class-yith-wcwl-shortcode.php:102
+msgctxt "[gutenberg]: block description"
+msgid "Shows a list of products in wishlist"
+msgstr "显示心愿单中的产品列表"
+
+#: includes/class-yith-wcwl-shortcode.php:52
+msgctxt "[gutenberg]: block name"
+msgid "YITH Add to wishlist"
+msgstr "YITH添加到收藏"
+
+#: plugin-fw/includes/builders/gutenberg/class-yith-gutenberg.php:156
+msgctxt "[gutenberg]: Category Name"
+msgid "YITH"
+msgstr "YITH"
+
+#: includes/class-yith-wcwl-shortcode.php:53
+msgctxt "[gutenberg]: block description"
+msgid "Shows Add to wishlist button"
+msgstr "显示添加到收藏夹按钮"
+
+#: includes/class-yith-wcwl-shortcode.php:110
+#: includes/widgets/elementor/class-yith-wcwl-elementor-wishlist.php:118
+msgid "Paginate"
+msgstr "分页"
+
+#: includes/class-yith-wcwl-shortcode.php:116
+msgid "Number of items to show per page"
+msgstr "每页显示的项目数"
+
+#: includes/class-yith-wcwl-shortcode.php:88
+msgid "Icon for the button (use any FontAwesome valid class, or leave empty to use the default settings)"
+msgstr "按钮的图标（使用任何FontAwesome有效类，或留空以使用默认值）"
+
+#: includes/class-yith-wcwl-shortcode.php:111
+#: includes/widgets/elementor/class-yith-wcwl-elementor-wishlist.php:119
+msgid "Do not paginate"
+msgstr "不分页"
+
+#: includes/class-yith-wcwl-shortcode.php:107
+msgid "Choose whether to paginate items in the wishlist or show them all"
+msgstr "选择是对心愿单中的商品进行分页还是全部显示"
+
+#: includes/class-yith-wcwl-shortcode.php:101
+msgctxt "[gutenberg]: block name"
+msgid "YITH Wishlist"
+msgstr "YITH的心愿单"
+
+#: includes/class-yith-wcwl-shortcode.php:121
+msgid "ID of the wishlist to show (e.g. K6EOWXB888ZD)"
+msgstr "要显示的心愿单的ID（例如：K6EOWXB888ZD）"
+
+#: includes/class-yith-wcwl-shortcode.php:58
+msgid "ID of the product to add to the wishlist (leave empty to use the global product)"
+msgstr "要添加到心愿单的产品的ID（留空以使用全局产品）"
+
+#: includes/class-yith-wcwl-shortcode.php:78
+msgid "\"Product already in wishlist\" label (leave empty to use the default settings)"
+msgstr "\"产品已在心愿单\"标签（留空以使用默认值）"
+
+#: includes/class-yith-wcwl-shortcode.php:83
+msgid "\"Product added to wishlist\" label (leave empty to use the default settings)"
+msgstr "\"产品已添加到心愿单\"标签（留空以使用默认值）"
+
+#. Description of the plugin
+msgid "<code><strong>YITH WooCommerce Wishlist</strong></code> gives your users the possibility to create, fill, manage and share their wishlists allowing you to analyze their interests and needs to improve your marketing strategies. <a href=\"https://yithemes.com/\" target=\"_blank\">Get more plugins for your e-commerce on <strong>YITH</strong></a>"
+msgstr "<code><strong>YITH WooCommerce心愿单</strong></code>使您的用户可以创建，填写，管理和共享他们的心愿单，从而可以分析他们的兴趣和需求，以改善营销策略。 <a href=\"https://yithemes.com/\" target=\"_blank\">在<strong> YITH </strong></a>上为您的电子商务获取更多插件"
+
+#. Author of the plugin
+msgid "YITH"
+msgstr "YITH"
+
+#: plugin-fw/yit-plugin.php:93
+msgctxt "Plugin Row Meta"
+msgid "Support"
+msgstr "支持"
+
+#: plugin-fw/yit-plugin.php:238
+msgctxt "Action links"
+msgid "Settings"
+msgstr "设置"
+
+#: plugin-fw/yit-plugin.php:97
+msgctxt "Plugin Row Meta"
+msgid "Premium version"
+msgstr "高级版"
+
+#: plugin-fw/yit-plugin.php:85
+msgctxt "Plugin Row Meta"
+msgid "Live Demo"
+msgstr "实时演示"
+
+#: plugin-fw/yit-plugin.php:242
+msgid "License"
+msgstr "许可证"
+
+#: plugin-fw/yit-plugin.php:89
+msgctxt "Plugin Row Meta"
+msgid "Documentation"
+msgstr "文献资料"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:100
+msgctxt "Privacy Policy Content"
+msgid "Who on our team has access"
+msgstr "我们团队中的谁有权访问"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:103
+msgctxt "Privacy Policy Content"
+msgid "What we share with others"
+msgstr "我们与他人分享的东西"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:97
+msgctxt "Privacy Policy Content"
+msgid "What we collect and store"
+msgstr "我们收集和储存的东西"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:93
+msgctxt "Privacy Policy Content"
+msgid "This sample language includes the basics around what personal data your store may be collecting, storing and sharing, as well as who may have access to that data. Depending on what settings are enabled and which additional plugins are used, the specific information shared by your store will vary. We recommend consulting with a lawyer when deciding what information to disclose on your privacy policy."
+msgstr "该示例语言包括有关您的商店可能收集，存储和共享哪些个人数据以及谁可以访问该数据的基础知识。根据启用的设置和使用的其他插件，商店共享的特定信息会有所不同。在决定要在您的隐私政策上披露哪些信息时，建议您咨询律师。"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:106
+msgctxt "Privacy Policy Content"
+msgid "Payments"
+msgstr "付款方式"
+
+#. Translators: %s Order number.
+#: includes/class-yith-wcwl-privacy.php:236
+msgid "Wishlist %s has been retained."
+msgstr "心愿单%s已保留。"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:61
+msgctxt "Privacy Policy Guide Title"
+msgid "YITH Plugins"
+msgstr "YITH插件"
+
+#: includes/class-yith-wcwl-privacy.php:54
+msgid "Wishlists you’ve created: we’ll keep track of the wishlists you create, and make them visible to the store staff"
+msgstr "您创建的心愿单：我们将跟踪您创建的心愿单，并将其显示给商店的工作人员"
+
+#: includes/class-yith-wcwl-privacy.php:146 plugin-options/lists-options.php:33
+#: plugin-options/lists-options.php:39
+msgid "Wishlists"
+msgstr "心愿单"
+
+#: includes/class-yith-wcwl-privacy.php:51
+msgid "While you visit our site, we’ll track:"
+msgstr "当您访问我们的网站时，我们将跟踪："
+
+#: includes/class-yith-wcwl-privacy.php:56
+msgid "We’ll also use cookies to keep track of wishlist contents while you’re browsing our site."
+msgstr "当您浏览我们的网站时，我们还将使用cookie来跟踪心愿单内容。"
+
+#: includes/class-yith-wcwl-privacy.php:275
+msgid "Visibility"
+msgstr "能见度"
+
+#: includes/class-yith-wcwl-privacy.php:271
+msgid "Token"
+msgstr "令牌"
+
+#: includes/class-yith-wcwl-privacy.php:273
+msgid "Title"
+msgstr "标题"
+
+#. Translators: %s Order number.
+#: includes/class-yith-wcwl-privacy.php:232
+msgid "Removed wishlist %s."
+msgstr "已删除心愿单%s 。"
+
+#: includes/class-yith-wcwl-privacy.php:63
+msgid "Our team members have access to this information to offer you better deals for the products you love."
+msgstr "我们的团队成员可以访问此信息，以便为您喜欢的产品提供更好的优惠。"
+
+#: includes/class-yith-wcwl-privacy.php:59
+msgid "Members of our team have access to the information you provide us with. For example, both Administrators and Shop Managers can access:"
+msgstr "我们团队的成员可以访问您提供给我们的信息。例如，管理员和商店管理员都可以访问："
+
+#: includes/class-yith-wcwl-privacy.php:276
+msgid "Items added"
+msgstr "新增项目"
+
+#: includes/class-yith-wcwl-privacy.php:93
+#: includes/class-yith-wcwl-privacy.php:109
+msgid "Customer wishlists"
+msgstr "客户心愿单"
+
+#: includes/class-yith-wcwl-privacy.php:274
+msgctxt "date when wishlist was created"
+msgid "Created on"
+msgstr "创建于"
+
+#: includes/class-yith-wcwl-privacy.php:61
+msgid "Wishlist details, such as products added, date of addition, name and privacy settings of your wishlists"
+msgstr "心愿单详细信息，例如添加的产品，添加日期，心愿单的名称和隐私设置"
+
+#: includes/class-yith-wcwl-privacy.php:53
+msgid "Products you’ve added to the wishlist: we’ll use this to show you and other users your favourite products, and to create targeted email campaigns."
+msgstr "您已添加到心愿单中的产品：我们将使用它来向您和其他用户显示您最喜欢的产品，并创建有针对性的电子邮件广告系列。"
+
+#: plugin-fw/templates/fields/icons.php:78
+msgid "Set Default"
+msgstr "默认设置"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:559
+#: plugin-fw/includes/class-yit-plugin-panel.php:562
+msgid "How to install premium version"
+msgstr "如何安装高级版"
+
+#: plugin-fw/templates/fields/upload.php:39
+msgid "Reset"
+msgstr "重设"
+
+#: templates/wishlist-view.php:102
+msgid "Product name"
+msgstr "商品名称"
+
+#: templates/wishlist-view.php:122
+msgid "Unit price"
+msgstr "单价"
+
+#: templates/wishlist-view.php:164
+msgid "Stock status"
+msgstr "库存状态"
+
+#: templates/wishlist-view-mobile.php:283 templates/wishlist-view.php:250
+#: templates/wishlist-view.php:607
+msgid "Remove this product"
+msgstr "移除这个商品"
+
+#: includes/class-yith-wcwl-wishlist-item.php:203
+msgid "Free!"
+msgstr "免费！"
+
+#: templates/wishlist-view-mobile.php:199 templates/wishlist-view.php:431
+msgid "Out of stock"
+msgstr "缺货"
+
+#: templates/wishlist-view-mobile.php:199 templates/wishlist-view.php:431
+msgid "In Stock"
+msgstr "有货"
+
+#: includes/functions-yith-wcwl.php:567
+msgid "Shared"
+msgstr "分享："
+
+#: plugin-fw/templates/fields/upload.php:34
+#: plugin-fw/templates/panel/woocommerce/woocommerce-upload.php:37
+msgid "Upload"
+msgstr "上传"
+
+#: plugin-fw/templates/fields/customtabs.php:40
+#: plugin-fw/templates/fields/customtabs.php:81
+msgid "Value"
+msgstr "值"
+
+#: plugin-fw/templates/fields/customtabs.php:25
+#: plugin-fw/templates/fields/customtabs.php:68 templates/wishlist-view.php:607
+msgid "Remove"
+msgstr "移除"
+
+#: plugin-fw/templates/fields/image-gallery.php:26
+#: plugin-fw/templates/fields/image-gallery.php:37
+msgid "Delete"
+msgstr "删除"
+
+#: includes/functions-yith-wcwl.php:534
+msgid "None"
+msgstr "无"
+
+#: plugin-fw/templates/bh-onboarding/onboarding-tabs.php:60
+msgid "Save"
+msgstr "保存"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1564
+msgid "The added file is not valid."
+msgstr "添加的文件无效。"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1566
+msgid "Sorting successful."
+msgstr "排序成功。"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1565
+msgid "Sorry, import is disabled."
+msgstr "抱歉，导入已禁用。"
+
+#: plugin-fw/templates/fields/sidebars.php:23
+msgid "Right sidebar"
+msgstr "右侧栏"
+
+#: plugin-fw/templates/fields/sidebars.php:54
+msgid "Right Sidebar"
+msgstr "右侧边栏"
+
+#: plugin-fw/templates/panel/v2/panel-content-page.php:58
+#: plugin-fw/templates/panel/v2/woocommerce/woocommerce-form.php:70
+#: plugin-fw/templates/panel/woocommerce/woocommerce-form.php:41
+msgid "Reset Defaults"
+msgstr "重设默认值"
+
+#: includes/functions-yith-wcwl.php:587
+msgid "Public"
+msgstr "公开"
+
+#: includes/functions-yith-wcwl.php:577
+msgid "Private"
+msgstr "私人的"
+
+#: plugin-fw/includes/class-yit-pointers.php:96
+msgid "Plugins Upgraded"
+msgstr "插件升级"
+
+#: plugin-fw/includes/class-yit-pointers.php:80
+msgid "Plugins Activated"
+msgstr "插件已激活"
+
+#: templates/share.php:72 templates/share.php:73
+msgid "Pinterest"
+msgstr "Pinterest的"
+
+#: plugin-fw/templates/fields/sidebars.php:26
+#: plugin-fw/templates/fields/sidebars.php:29
+msgid "No sidebar"
+msgstr "没有侧边栏"
+
+#: templates/wishlist-view-mobile.php:232 templates/wishlist-view.php:544
+msgid "Move"
+msgstr "移动"
+
+#: plugin-fw/templates/fields/sidebars.php:39
+msgid "Left Sidebar"
+msgstr "左侧边栏"
+
+#: plugin-fw/templates/fields/sidebars.php:20
+msgid "Left sidebar"
+msgstr "左侧边栏"
+
+#. Plugin URI of the plugin
+msgid "https://yithemes.com/themes/plugins/yith-woocommerce-wishlist/"
+msgstr "https://yithemes.com/themes/plugins/yith-woocommerce-wishlist/"
+
+#. Author URI of the plugin
+msgid "https://yithemes.com/"
+msgstr "https://yithemes.com/"
+
+#: plugin-fw/templates/fields/customtabs.php:17
+msgid "Expand all"
+msgstr "展开全部"
+
+#: templates/share.php:102 templates/share.php:103
+msgid "Email"
+msgstr "电子邮件"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1560
+msgid "Element updated correctly."
+msgstr "元素已正确更新。"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1559
+msgid "Element deleted correctly."
+msgstr "元素已正确删除。"
+
+#: templates/wishlist-view-header.php:86
+msgid "Edit title"
+msgstr "编辑标题"
+
+#: plugin-fw/templates/fields/customtabs.php:93
+msgid "Do you want to remove the custom tab?"
+msgstr "您要删除自定义标签吗？"
+
+#: plugin-fw/templates/fields/image-gallery.php:36
+msgid "Delete image"
+msgstr "删除图片"
+
+#: plugin-fw/templates/fields/customtabs.php:41
+#: plugin-fw/templates/fields/customtabs.php:82
+msgid "Content of the tab. (HTML is supported)"
+msgstr "选项卡的内容。 （支持HTML）"
+
+#: plugin-fw/templates/fields/customtabs.php:17
+msgid "Close all"
+msgstr "关闭所有"
+
+#: plugin-fw/templates/fields/sidebars.php:41
+#: plugin-fw/templates/fields/sidebars.php:56
+msgid "Choose a sidebar"
+msgstr "选择侧边栏"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1563
+msgid "An error has occurred during import. Please try again."
+msgstr "导入期间发生错误。请再试一次。"
+
+#. translators: date added label: 1 date added.
+#: templates/wishlist-view.php:479
+msgid "Added on: %s"
+msgstr "添加到： %s"
+
+#: plugin-fw/templates/fields/image-gallery.php:34
+msgid "Add to gallery"
+msgstr "加到图库"
+
+#: plugin-fw/templates/fields/image-gallery.php:33
+msgid "Add Images to Gallery"
+msgstr "将图像添加到图库"
+
+#: plugin-fw/templates/fields/image-gallery.php:35
+msgid "Add images"
+msgstr "新增图片"
+
+#: plugin-fw/templates/fields/customtabs.php:52
+msgid "Add custom product tab"
+msgstr "添加自定义产品标签"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1562
+msgid "Database imported correctly."
+msgstr "数据库已正确导入。"
+
+#: includes/class-yith-wcwl-shortcode.php:461
+msgid "Share on:"
+msgstr "分享："
+
+#: includes/class-yith-wcwl-ajax-handler.php:203
+#: includes/class-yith-wcwl-ajax-handler.php:252
+msgid "Product successfully removed."
+msgstr "成功移除商品。"
+
+#: plugin-fw/includes/class-yit-plugin-subpanel.php:127
+#: plugin-fw/templates/panel/panel-content-page.php:29
+msgid "Save Changes"
+msgstr "保存更改"
+
+#. Plugin Name of the plugin
+msgid "YITH WooCommerce Wishlist"
+msgstr "YITH WooCommerce Wishlist"
+
+#: templates/share.php:64 templates/share.php:65
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/class-yith-wcwl-shortcode.php:524
+#: plugin-options/settings/wishlist_page-options.php:156
+msgid "Tweet on Twitter"
+msgstr "推上的推文"
+
+#: plugin-options/settings/add_to_wishlist-options.php:160
+msgid "The product is already in your wishlist!"
+msgstr "该产品已经在您的心愿单中！"
+
+#: includes/class-yith-wcwl-install.php:342
+msgid "Wishlist"
+msgstr "心愿单"
+
+#: includes/class-yith-wcwl-install.php:340
+msgctxt "page_slug"
+msgid "wishlist"
+msgstr "心愿单"
+
+#: plugin-options/settings/wishlist_page-options.php:28
+#: plugin-options/settings/wishlist_page-options.php:35
+msgid "Wishlist page"
+msgstr "心愿单页面"
+
+#: plugin-fw/includes/class-yith-system-status.php:177
+msgid "YITH Plugins"
+msgstr "YITH插件"
+
+#: plugin-options/settings/add_to_wishlist-options.php:84
+#: plugin-options/settings/add_to_wishlist-options.php:116
+msgid "Use shortcode"
+msgstr "使用简码"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1556
+msgid "The element you have entered already exists. Please, enter another name."
+msgstr "您输入的元素已经存在。请输入其他名称。"
+
+#: plugin-fw/includes/class-yit-plugin-panel-woocommerce.php:606
+msgid "The changes you have made will be lost if you leave this page."
+msgstr "如果离开此页面，所做的更改将丢失。"
+
+#: plugin-options/settings/wishlist_page-options.php:530
+msgid "Text hover"
+msgstr "文字（悬停）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:203
+#: plugin-options/settings/wishlist_page-options.php:293
+#: plugin-options/settings/wishlist_page-options.php:391
+#: plugin-options/settings/wishlist_page-options.php:440
+#: plugin-options/settings/wishlist_page-options.php:488
+#: plugin-options/settings/wishlist_page-options.php:525
+msgid "Text"
+msgstr "文本"
+
+#: plugin-options/settings/wishlist_page-options.php:209
+msgid "Social text"
+msgstr "社交文字"
+
+#: plugin-options/settings/wishlist_page-options.php:218
+msgid "Social image URL"
+msgstr "社交图片网址"
+
+#: plugin-options/settings/general-options.php:55
+msgid "YITH WooCommerce Frequently Bought Together Integration"
+msgstr "YITH WooCommerce Frequently Bought Together Integration"
+
+#: templates/wishlist-view-mobile.php:304 templates/wishlist-view.php:649
+msgid "No products added to the wishlist"
+msgstr "没有产品添加到心愿单"
+
+#: includes/class-yith-wcwl-shortcode.php:507
+#: plugin-options/settings/wishlist_page-options.php:147
+msgid "Share on Facebook"
+msgstr "在脸书上分享"
+
+#: plugin-options/settings/wishlist_page-options.php:174
+msgid "Share by email"
+msgstr "通过电子邮件分享"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1557
+msgid "Settings saved"
+msgstr "设置已保存"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1558
+msgid "Settings reset"
+msgstr "设置重置"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:90
+msgid "Settings"
+msgstr "设置"
+
+#: plugin-fw/includes/class-yit-plugin-subpanel.php:137
+#: plugin-fw/templates/panel/panel-content-page.php:38
+msgid "Reset to default"
+msgstr "重置为默认"
+
+#: plugin-options/settings/wishlist_page-options.php:128
+msgid "Remove if added to the cart"
+msgstr "如果添加到购物车，请删除"
+
+#: plugin-options/settings/wishlist_page-options.php:119
+msgid "Redirect to cart"
+msgstr "重定向到购物车"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:89
+msgid "Plugin Settings"
+msgstr "插件设置"
+
+#: includes/class-yith-wcwl-shortcode.php:542
+#: plugin-options/settings/wishlist_page-options.php:165
+msgid "Pin on Pinterest"
+msgstr "Pin on Pinterest"
+
+#: plugin-fw/templates/fields/customtabs.php:34
+#: plugin-fw/templates/fields/customtabs.php:76
+msgid "Name"
+msgstr "名称"
+
+#. translators: 1. Blog name.
+#: plugin-options/settings/wishlist_page-options.php:204
+msgid "My wishlist on %s"
+msgstr "我在%s上心愿单"
+
+#: plugin-options/settings/wishlist_page-options.php:238
+msgid "Default wishlist name"
+msgstr "默认的心愿单标题"
+
+#: plugin-fw/includes/class-yit-assets.php:186
+#: plugin-fw/includes/class-yit-plugin-subpanel.php:134
+#: plugin-fw/templates/panel/panel-content-page.php:14
+msgid "If you continue with this action, you will reset all options in this page."
+msgstr "如果继续执行此操作，将重置此页面中的所有选项。"
+
+#: plugin-options/settings/add_to_wishlist-options.php:29
+#: plugin-options/settings/general-options.php:34
+msgid "General Settings"
+msgstr "通用设置"
+
+#: templates/share.php:56 templates/share.php:57
+msgid "Facebook"
+msgstr "脸书"
+
+#: plugin-options/settings/add_to_wishlist-options.php:319
+msgid "Custom CSS"
+msgstr "自定义CSS"
+
+#: plugin-options/settings/add_to_wishlist-options.php:208
+#: plugin-options/settings/wishlist_page-options.php:298
+#: plugin-options/settings/wishlist_page-options.php:396
+#: plugin-options/settings/wishlist_page-options.php:445
+#: plugin-options/settings/wishlist_page-options.php:493
+msgid "Border"
+msgstr "边界"
+
+#: plugin-options/settings/wishlist_page-options.php:575
+#: plugin-options/settings/wishlist_page-options.php:615
+#: plugin-options/settings/wishlist_page-options.php:655
+#: plugin-options/settings/wishlist_page-options.php:695
+#: plugin-options/settings/wishlist_page-options.php:735
+msgid "Background hover"
+msgstr "背景（悬停）"
+
+#: plugin-options/settings/add_to_wishlist-options.php:198
+#: plugin-options/settings/wishlist_page-options.php:288
+#: plugin-options/settings/wishlist_page-options.php:386
+#: plugin-options/settings/wishlist_page-options.php:435
+#: plugin-options/settings/wishlist_page-options.php:483
+#: plugin-options/settings/wishlist_page-options.php:570
+#: plugin-options/settings/wishlist_page-options.php:610
+#: plugin-options/settings/wishlist_page-options.php:650
+#: plugin-options/settings/wishlist_page-options.php:690
+#: plugin-options/settings/wishlist_page-options.php:730
+msgid "Background"
+msgstr "背景"
+
+#: plugin-fw/includes/class-yit-assets.php:185
+#: plugin-fw/includes/class-yit-plugin-subpanel.php:134
+#: plugin-fw/templates/panel/panel-content-page.php:14
+msgid "Are you sure?"
+msgstr "你确定吗？"
+
+#: plugin-options/settings/add_to_wishlist-options.php:114
+msgid "After thumbnails"
+msgstr "缩略图后"
+
+#: plugin-options/settings/add_to_wishlist-options.php:113
+msgid "After \"Add to cart\""
+msgstr "在“添加到购物车”之后"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-add-to-wishlist.php:118
+#: plugin-options/settings/add_to_wishlist-options.php:136
+msgid "Add to wishlist"
+msgstr "加入心愿单"
+
+#: includes/class-yith-wcwl-frontend.php:1090
+#: includes/class-yith-wcwl-shortcode.php:257
+#: plugin-options/settings/wishlist_page-options.php:249
+#: templates/wishlist-view-footer-mobile.php:59
+#: templates/wishlist-view-footer.php:59
+msgid "Add to cart"
+msgstr "添加到购物车"
+
+#: plugin-options/settings/add_to_wishlist-options.php:141
+msgid "\"Product added\" text"
+msgstr "“已添加产品”文本"
+
+#: plugin-options/settings/add_to_wishlist-options.php:133
+msgid "\"Add to wishlist\" text"
+msgstr "“添加到心愿单”文本"
+
+#: plugin-options/settings/wishlist_page-options.php:246
+msgid "\"Add to cart\" text"
+msgstr "“添加到购物车”文本"
+
+#: plugin-options/settings/wishlist_page-options.php:344
+msgid "\"Add to cart\" icon"
+msgstr "“添加到购物车”图标"
+
+#: includes/widgets/elementor/class-yith-wcwl-elementor-add-to-wishlist.php:128
+#: plugin-options/settings/add_to_wishlist-options.php:152
+msgid "Browse wishlist"
+msgstr "浏览「心愿单」"
+
+#: plugin-options/settings/add_to_wishlist-options.php:157
+msgid "\"Product already in wishlist\" text"
+msgstr "“产品已在心愿单中”文本"
+
+#: plugin-options/settings/wishlist_page-options.php:129
+msgid "Remove the product from the wishlist after it has been added to the cart"
+msgstr "如果产品已添加到购物车，请从心愿单中删除该产品。"
+
+#: plugin-options/settings/general-options.php:61
+msgid "Enable slider in wishlist"
+msgstr "启用心愿单中的滑块"
+
+#: includes/class-yith-wcwl.php:340 includes/class-yith-wcwl.php:366
+msgid "Error. Unable to remove the product from the wishlist."
+msgstr "错误。无法从「心愿单」移除这个商品。"
+
+#: plugin-options/settings/add_to_wishlist-options.php:144
+msgid "Product added!"
+msgstr "产品已添加！"
+
+#: plugin-options/settings/add_to_wishlist-options.php:215
+#: plugin-options/settings/wishlist_page-options.php:306
+#: plugin-options/settings/wishlist_page-options.php:404
+#: plugin-options/settings/wishlist_page-options.php:453
+msgid "Background Hover"
+msgstr "背景（悬停）"
+
+#: includes/class-yith-wcwl.php:237 includes/class-yith-wcwl.php:243
+msgid "An error occurred while adding the products to the wishlist."
+msgstr "将产品添加到心愿单时发生错误。"
+
+#: plugin-options/settings/add_to_wishlist-options.php:149
+msgid "\"Browse wishlist\" text"
+msgstr "“浏览心愿单”文本"
+
+#: plugin-options/settings/add_to_wishlist-options.php:115
+msgid "After summary"
+msgstr "在摘要后"
+
+#: plugin-options/settings/add_to_wishlist-options.php:286
+msgid "\"Added to wishlist\" icon"
+msgstr "“已添加到心愿单”图标"
+
+#: plugin-options/settings/add_to_wishlist-options.php:253
+msgid "\"Add to wishlist\" icon"
+msgstr "“添加到心愿单”图标"
