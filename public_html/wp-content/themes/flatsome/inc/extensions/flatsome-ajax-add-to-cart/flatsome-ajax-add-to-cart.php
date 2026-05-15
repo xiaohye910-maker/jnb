@@ -27,7 +27,18 @@ add_action( 'wp_enqueue_scripts', 'flatsome_ajax_add_to_cart_script' );
  * Single product ajax add to cart.
  */
 function flatsome_ajax_add_to_cart() {
-	$product_id = absint( isset( $_POST['add-to-cart'] ) ? $_POST['add-to-cart'] : 0 );
+	$product_id   = absint( isset( $_POST['add-to-cart'] ) ? $_POST['add-to-cart'] : 0 );
+	$quantity     = isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : 1;
+	$variation_id = isset( $_POST['variation_id'] ) ? absint( $_POST['variation_id'] ) : 0;
+	$variations   = array();
+
+	foreach ( $_POST as $key => $value ) {
+		if ( 0 === strpos( $key, 'attribute_' ) ) {
+			$variations[ sanitize_title( wp_unslash( $key ) ) ] = wp_unslash( $value );
+		}
+	}
+
+	$added = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variations );
 
 	ob_start();
 	wc_print_notices();
@@ -38,6 +49,7 @@ function flatsome_ajax_add_to_cart() {
 	$mini_cart = ob_get_clean();
 
 	$data = array(
+		'error'       => ! $added,
 		'product_url' => get_permalink( $product_id ),
 		'notices'     => $notices,
 		'fragments'   => apply_filters(
