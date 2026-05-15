@@ -8,4 +8,5 @@ wp-content/updraft/
 logs/
 webstats/
 *.log
+php_errorlog
 .DS_Store
