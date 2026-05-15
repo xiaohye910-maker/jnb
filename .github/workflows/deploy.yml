@@ -3,6 +3,7 @@ name: Deploy to SiteGround
 on:
   push:
     branches:
+      - main
       - claude/import-siteground-github-ZpFH9
 
 jobs:
