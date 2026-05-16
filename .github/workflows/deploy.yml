@@ -17,8 +17,25 @@ jobs:
           SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
         run: |
           mkdir -p ~/.ssh
-          echo "$SSH_KEY" > ~/.ssh/deploy_key
+
+          # Normalize the secret: strip CRLF, ensure trailing newline.
+          # GitHub's secret UI sometimes corrupts keys with Windows line
+          # endings or strips the trailing newline OpenSSH requires.
+          printf '%s\n' "$SSH_KEY" | tr -d '\r' | sed -e '$a\' > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
+
+          # Validate the key parses before attempting to use it.
+          if ! ssh-keygen -y -f ~/.ssh/deploy_key > /dev/null 2>&1; then
+            echo "::error::SSH key in DEPLOY_SSH_KEY secret is malformed (libcrypto cannot parse it)."
+            echo "First line of key file (sanity check):"
+            head -1 ~/.ssh/deploy_key
+            echo "Last line of key file:"
+            tail -1 ~/.ssh/deploy_key
+            echo "Byte count: $(wc -c < ~/.ssh/deploy_key)"
+            exit 1
+          fi
+          echo "SSH key parsed OK."
+
           ssh-keyscan -p 18765 ssh.jnbhealth.com >> ~/.ssh/known_hosts 2>/dev/null
 
           rsync -avz --delete \
