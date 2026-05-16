@@ -1,2 +1,8 @@
 <?php
 // Add custom Theme Functions here
+
+// Force Flatsome AJAX add-to-cart on.
+// The theme setting was disabled, causing standard form POST which gets served
+// from SiteGround's page cache showing an empty cart after redirect.
+// AJAX routes through admin-ajax.php (never cached) so cart updates correctly.
+add_filter( 'theme_mod_ajax_add_to_cart', '__return_true' );
