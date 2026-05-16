@@ -33,12 +33,13 @@ function flatsome_ajax_add_to_cart() {
 	$variations   = array();
 
 	foreach ( $_POST as $key => $value ) {
-		if ( 0 === strpos( $key, 'attribute_' ) ) {
-			$variations[ sanitize_title( wp_unslash( $key ) ) ] = wp_unslash( $value );
+		if ( is_string( $key ) && 0 === strpos( $key, 'attribute_' ) ) {
+			$variations[ sanitize_key( $key ) ] = is_array( $value ) ? '' : wp_unslash( $value );
 		}
 	}
 
-	$added = WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variations );
+	$passed_validation = apply_filters( 'woocommerce_add_to_cart_validation', true, $product_id, $quantity, $variation_id, $variations );
+	$added             = $passed_validation ? WC()->cart->add_to_cart( $product_id, $quantity, $variation_id, $variations ) : false;
 
 	ob_start();
 	wc_print_notices();
