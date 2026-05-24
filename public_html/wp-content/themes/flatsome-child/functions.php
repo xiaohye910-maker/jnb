@@ -17,13 +17,26 @@ add_filter( 'script_loader_src', function( $src, $handle ) {
 	return $src;
 }, 10, 2 );
 
-// Hide the third-party pymntpl-paypal-woocommerce card gateway (ppcp_card) from checkout.
-// Both plugins instantiate paypal.CardFields() on the same page; their SDK instances
-// interfere and every submission shows "credit card details are not valid."
-// The official woocommerce-paypal-payments ppcp-credit-card-gateway handles direct
-// card entry (no PayPal account required) and is the one users need.
-// The PayPal button gateway (ppcp-gateway) is unaffected and keeps working.
+// Hide the third-party pymntpl-paypal-woocommerce card gateway (ppcp_card) from checkout UI.
 add_filter( 'woocommerce_available_payment_gateways', function( $gateways ) {
 	unset( $gateways['ppcp_card'] );
 	return $gateways;
+} );
+
+// Prevent the third-party plugin's checkout scripts from loading.
+// woocommerce_available_payment_gateways hides ppcp_card from the UI but does NOT
+// stop the plugin from enqueuing scripts (it checks gateway::is_available(), not the
+// WC filter). With its scripts active, the third-party plugin:
+//   1. Loads the PayPal SDK at a different URL (different components) than the official
+//      plugin — PayPal blocks a second SDK load with different params on the same page.
+//   2. Instantiates paypal.CardFields() independently, conflicting with the official
+//      plugin's instance and causing "credit card details are not valid" on submit.
+// Removing these handles via the plugin's own filter eliminates both conflicts so
+// the official ppcp-credit-card-gateway can handle direct card entry cleanly.
+add_filter( 'wc_ppcp_script_dependencies', function( $handles ) {
+	return array_diff( $handles, [
+		'wc-ppcp-card-gateway',
+		'wc-ppcp-checkout-gateway',
+		'wc-ppcp-checkout-express',
+	] );
 } );
