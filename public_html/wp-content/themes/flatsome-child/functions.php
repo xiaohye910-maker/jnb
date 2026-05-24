@@ -7,10 +7,9 @@
 // AJAX routes through admin-ajax.php (never cached) so cart updates correctly.
 add_filter( 'theme_mod_ajax_add_to_cart', '__return_true' );
 
-// Bust browser/CDN cache for the patched credit-cards.js (fix: field state
-// key mismatch caused "credit card form incomplete" error on every submission).
+// Bust browser/CDN cache for patched plugin JS files.
 add_filter( 'script_loader_src', function( $src, $handle ) {
-	$patched_handles = array( 'wc-ppcp-card-gateway', 'ppcp-smart-button' );
+	$patched_handles = array( 'wc-ppcp-card-gateway', 'ppcp-smart-button', 'ppcp-blocks-js-advanced-card-checkout-block' );
 	if ( in_array( $handle, $patched_handles, true ) ) {
 		$src = add_query_arg( 'patch', '20260524d', $src );
 	}
