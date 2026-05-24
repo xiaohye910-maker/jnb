@@ -16,3 +16,14 @@ add_filter( 'script_loader_src', function( $src, $handle ) {
 	}
 	return $src;
 }, 10, 2 );
+
+// Hide the official woocommerce-paypal-payments credit-card gateway from checkout.
+// pymntpl-paypal-woocommerce (ppcp_card) already handles card payments.
+// When both gateways are active they both instantiate paypal.CardFields() on the
+// same page, their SDK instances interfere, and every submission shows
+// "Unfortunately, your credit card details are not valid."
+// The PayPal button gateway (ppcp-gateway) is unaffected and keeps working.
+add_filter( 'woocommerce_available_payment_gateways', function( $gateways ) {
+	unset( $gateways['ppcp-credit-card-gateway'] );
+	return $gateways;
+} );
