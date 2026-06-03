@@ -34,6 +34,50 @@ function h( $t ) { echo "\n========== $t ==========\n"; }
 echo "SECURITY AUDIT — " . get_bloginfo( 'name' ) . " (" . home_url() . ")\n";
 echo "generated: " . gmdate( 'c' ) . "\n";
 
+// ── 0) KNOWN INDICATORS OF COMPROMISE (from forensic log analysis) ──────────
+// This site's prior infection used: a remote-HTML injector mu-plugin
+// (body-inject.php) calling C2 'bozuldumtamir...xyz/remote/html.php', and an
+// admin backdoor (wp_auto_login*.php / user crxvtbuds@gmail.com). Hunt the DB
+// for any residue of these so we can confirm whether they have returned.
+h( '0) KNOWN INDICATORS OF COMPROMISE — DB hunt' );
+function ioc_scan_db( $needle ) {
+    global $wpdb;
+    $like = '%' . $wpdb->esc_like( $needle ) . '%';
+    $hits = [];
+    $c = (int) $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->options}  WHERE option_value LIKE %s OR option_name LIKE %s", $like, $like ) ); if ( $c ) $hits[] = "options:$c";
+    $c = (int) $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->posts}    WHERE post_content LIKE %s OR post_title LIKE %s", $like, $like ) ); if ( $c ) $hits[] = "posts:$c";
+    $c = (int) $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->postmeta} WHERE meta_value LIKE %s", $like ) ); if ( $c ) $hits[] = "postmeta:$c";
+    $c = (int) $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->usermeta} WHERE meta_value LIKE %s", $like ) ); if ( $c ) $hits[] = "usermeta:$c";
+    $c = (int) $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->users}    WHERE user_login LIKE %s OR user_email LIKE %s OR user_nicename LIKE %s", $like, $like, $like ) ); if ( $c ) $hits[] = "users:$c";
+    return $hits;
+}
+$iocs = [ 'bozuldumtamir', '/remote/html.php', 'wp_auto_login', 'body-inject', 'crxvtbuds' ];
+$any_ioc = false;
+foreach ( $iocs as $needle ) {
+    $hits = ioc_scan_db( $needle );
+    if ( $hits ) { $any_ioc = true; printf( "!! '%s' FOUND in DB -> %s\n", $needle, implode( ', ', $hits ) ); }
+    else { printf( "   '%s' : clean\n", $needle ); }
+}
+echo $any_ioc ? "\n!! IOC residue found above — paste this report back for removal steps.\n" : "\n(no known-IOC residue in the database)\n";
+
+// WPCode / header-footer / Astra custom layouts can eval DB-stored code — a
+// favourite re-injection channel. List them so we can eyeball for spam.
+h( "0b) CODE-EXECUTING CONTENT STORES (WPCode snippets, custom layouts, IHAF)" );
+$code_cpts = [ 'wpcode', 'astra-advanced-hook', 'elementor_library' ];
+foreach ( $code_cpts as $cpt ) {
+    $rows = $wpdb->get_results( $wpdb->prepare(
+        "SELECT ID, post_status, post_title FROM {$wpdb->posts} WHERE post_type = %s ORDER BY post_modified DESC LIMIT 30", $cpt
+    ) );
+    echo "--- post_type '$cpt': " . count( $rows ) . " item(s) ---\n";
+    foreach ( $rows as $r ) {
+        printf( "   ID=%-6d %-9s %s\n", $r->ID, $r->post_status, $r->post_title );
+    }
+}
+foreach ( [ 'ihaf_insert_header', 'ihaf_insert_body', 'ihaf_insert_footer' ] as $opt ) {
+    $v = get_option( $opt );
+    if ( ! empty( $v ) ) { printf( "!! option '%s' is non-empty (%d chars) — inspect for injected script\n", $opt, strlen( (string) $v ) ); }
+}
+
 // ── 1) Administrator accounts ────────────────────────────────────────────────
 h( '1) ADMINISTRATOR ACCOUNTS (look for any you do not recognise)' );
 $admins = get_users( [ 'role' => 'administrator', 'orderby' => 'registered', 'order' => 'ASC' ] );
@@ -176,6 +220,46 @@ foreach ( array_unique( $scan_dirs ) as $dir ) {
     }
 }
 echo $hits ? "\n($hits file(s) matched shell signatures — inspect)\n" : "(no shell signatures in scanned live dirs — good)\n";
+
+h( '7b) IOC FILESYSTEM HUNT (backdoor filenames + C2 string across webroot)' );
+// Bounded recursive scan of the whole web root for the known C2 marker and
+// for backdoor filename patterns. Time-budgeted so it never times out.
+$deadline   = microtime( true ) + 20.0; // 20s budget
+$skip_dirs  = [ 'node_modules', 'vendor', 'vendor_prefixed', '.git' ];
+$name_re    = '/(auto[_-]?login|body[_-]?inject|inject[_-]?body|wso|filesman|c99|r57|shell)/i';
+$content_re = '/bozuldumtamir|\/remote\/html\.php|wp_auto_login/i';
+$fs_hits    = 0; $scanned = 0; $budget_hit = false;
+$it = new RecursiveIteratorIterator(
+    new RecursiveCallbackFilterIterator(
+        new RecursiveDirectoryIterator( ABSPATH, FilesystemIterator::SKIP_DOTS ),
+        function ( $cur ) use ( $skip_dirs ) {
+            if ( $cur->isDir() ) { return ! in_array( $cur->getFilename(), $skip_dirs, true ); }
+            return true;
+        }
+    )
+);
+foreach ( $it as $file ) {
+    if ( microtime( true ) > $deadline ) { $budget_hit = true; break; }
+    $name = $file->getFilename();
+    if ( preg_match( $name_re, $name ) && preg_match( '/\.php$/i', $name ) ) {
+        echo "!! suspicious filename: " . $file->getPathname() . "\n"; $fs_hits++;
+    }
+    if ( preg_match( '/\.(php|phtml|inc)$/i', $name ) ) {
+        $sz = $file->getSize();
+        if ( $sz > 0 && $sz < 300000 ) {
+            $scanned++;
+            $c = @file_get_contents( $file->getPathname() );
+            if ( $c !== false && preg_match( $content_re, $c ) ) {
+                // The shield legitimately references these strings to delete them.
+                if ( basename( $file->getPathname() ) !== '0-malware-shield.php' ) {
+                    echo "!! C2/backdoor string in: " . $file->getPathname() . "\n"; $fs_hits++;
+                }
+            }
+        }
+    }
+}
+printf( "scanned ~%d php files%s\n", $scanned, $budget_hit ? " (stopped at 20s budget — rerun if needed)" : '' );
+echo $fs_hits ? "\n!! $fs_hits filesystem IOC hit(s) above — these are live backdoors, remove them.\n" : "(no backdoor filenames or C2 strings on disk — good)\n";
 
 // ── 8) Residual casino-spam check on the live DB ────────────────────────────
 h( '8) RESIDUAL CASINO-SPAM CHECK (current + previous waves)' );
