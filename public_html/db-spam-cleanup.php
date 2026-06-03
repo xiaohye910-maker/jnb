@@ -6,11 +6,22 @@
  */
 
 // ── CONFIG ───────────────────────────────────────────────────────────────────
-// Change this token before uploading, then pass it in the URL as ?token=...
-define( 'CLEANUP_TOKEN', 'change-me-before-uploading' );
+// Pass this token in the URL as ?token=...  Change it if you want a private one.
+define( 'CLEANUP_TOKEN', 'jnb-fix-2026' );
 
 // Spam patterns to search for (case-insensitive substring matches)
 $SPAM_PATTERNS = [
+    // ── Current wave: "1red casino" ──────────────────────────────────────
+    '1red casino',
+    '1redcasino',
+    '1red-casino',
+    'seamless and enjoyable gaming experience from the very first click',
+    'all the way to the final withdrawal',
+    'deposits are processed instantly through trusted channels',
+    'game selection covers all major categories without exception',
+    'knowledgeable agents is available around the clock',
+    'registration process is refreshingly quick',
+    // ── Previous wave: "rouge casino" (kept for residual cleanup) ─────────
     'rougecasinos.com',
     'rouge casino',
     'rougecasino',
