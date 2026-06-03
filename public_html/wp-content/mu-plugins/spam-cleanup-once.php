@@ -3,25 +3,45 @@
  * One-time casino-spam database cleanup.
  * Runs automatically on the next WordPress page load, then deletes itself.
  * Deployed by Claude Code — safe to remove if already executed.
+ *
+ * To clean a NEW spam wave in the future: add its distinctive phrases to
+ * $patterns below and bump JNB_SPAM_CLEANUP_VERSION so the guard re-runs.
  */
+
+// Bump this whenever the pattern list changes so the cleanup runs again
+// (the previous run set an option keyed to the old version).
+define( 'JNB_SPAM_CLEANUP_VERSION', '2026-06-1red' );
 
 add_action( 'init', 'jnb_spam_cleanup_run', 1 );
 
 function jnb_spam_cleanup_run() {
-    // Only run once; guard against concurrent requests
-    if ( get_option( 'jnb_spam_cleanup_done' ) ) {
-        // Already ran — delete this file so it stops loading
+    $done_option = 'jnb_spam_cleanup_done_' . JNB_SPAM_CLEANUP_VERSION;
+
+    // Only run once per version; guard against concurrent requests.
+    if ( get_option( $done_option ) ) {
+        // Already ran — delete this file so it stops loading.
         @unlink( __FILE__ );
         return;
     }
-    // Atomic lock: update_option returns false if value unchanged
-    if ( ! add_option( 'jnb_spam_cleanup_done', '1', '', 'no' ) ) {
-        return; // Another request is already running it
+    // Atomic lock: add_option returns false if the option already exists.
+    if ( ! add_option( $done_option, '1', '', 'no' ) ) {
+        return; // Another request is already running it.
     }
 
     global $wpdb;
 
     $patterns = [
+        // ── Current wave: "1red casino" ──────────────────────────────────
+        '1red casino',
+        '1redcasino',
+        '1red-casino',
+        'seamless and enjoyable gaming experience from the very first click',
+        'all the way to the final withdrawal',
+        'deposits are processed instantly through trusted channels',
+        'game selection covers all major categories without exception',
+        'knowledgeable agents is available around the clock',
+        'registration process is refreshingly quick',
+        // ── Previous wave: "rouge casino" (kept for residual cleanup) ─────
         'rougecasinos.com',
         'rouge casino',
         'rougecasino',
@@ -39,7 +59,8 @@ function jnb_spam_cleanup_run() {
     foreach ( $patterns as $p ) {
         $rows = $wpdb->get_col(
             $wpdb->prepare(
-                "SELECT ID FROM {$wpdb->posts} WHERE post_content LIKE %s OR post_excerpt LIKE %s",
+                "SELECT ID FROM {$wpdb->posts} WHERE post_content LIKE %s OR post_excerpt LIKE %s OR post_title LIKE %s",
+                '%' . $wpdb->esc_like( $p ) . '%',
                 '%' . $wpdb->esc_like( $p ) . '%',
                 '%' . $wpdb->esc_like( $p ) . '%'
             )
