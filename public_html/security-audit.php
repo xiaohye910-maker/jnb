@@ -263,7 +263,10 @@ echo $fs_hits ? "\n!! $fs_hits filesystem IOC hit(s) above — these are live ba
 
 // ── 8) Residual casino-spam check on the live DB ────────────────────────────
 h( '8) RESIDUAL CASINO-SPAM CHECK (current + previous waves)' );
-$spam = [ '1red casino', '1redcasino', 'rouge casino', 'rougecasino',
+$spam = [ 'fanobet', 'golden euro casino', 'tower rush app',
+    'offers a user-friendly gaming platform',
+    'For those seeking additional entertainment options',
+    '1red casino', '1redcasino', 'rouge casino', 'rougecasino',
     'deposits are processed instantly through trusted channels',
     'experienced players choose to spend their gaming time' ];
 $found = 0;
