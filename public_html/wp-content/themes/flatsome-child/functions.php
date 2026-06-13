@@ -11,7 +11,7 @@ add_filter( 'theme_mod_ajax_add_to_cart', '__return_true' );
 add_filter( 'script_loader_src', function( $src, $handle ) {
 	$patched_handles = array( 'wc-ppcp-card-gateway', 'ppcp-smart-button', 'ppcp-blocks-js-advanced-card-checkout-block' );
 	if ( in_array( $handle, $patched_handles, true ) ) {
-		$src = add_query_arg( 'patch', '20260524d', $src );
+		$src = add_query_arg( 'patch', '20260603a', $src );
 	}
 	return $src;
 }, 10, 2 );
