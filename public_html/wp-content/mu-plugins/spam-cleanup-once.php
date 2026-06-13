@@ -10,7 +10,7 @@
 
 // Bump this whenever the pattern list changes so the cleanup runs again
 // (the previous run set an option keyed to the old version).
-define( 'JNB_SPAM_CLEANUP_VERSION', '2026-06-1red' );
+define( 'JNB_SPAM_CLEANUP_VERSION', '2026-06-fanobet' );
 
 add_action( 'init', 'jnb_spam_cleanup_run', 1 );
 
@@ -31,7 +31,19 @@ function jnb_spam_cleanup_run() {
     global $wpdb;
 
     $patterns = [
-        // ── Current wave: "1red casino" ──────────────────────────────────
+        // ── Current wave: "fanobet / golden euro / tower rush" ───────────
+        'fanobet',                 // fanobetcasino.net.nl, fanobet casino
+        'golden euro casino',
+        'goldeneurocasino',
+        'golden-euro-casino',
+        'tower rush app',
+        'towerrush',
+        'Authentic products, better prices',
+        'For those seeking additional entertainment options',
+        'offers a user-friendly gaming platform',
+        'For those seeking premium-quality wellness products',
+        'offers a trusted selection of supplements',
+        // ── Previous wave: "1red casino" (kept for residual cleanup) ─────
         '1red casino',
         '1redcasino',
         '1red-casino',
